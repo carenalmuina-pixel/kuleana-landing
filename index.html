@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kuleana Claim Solutions — Hawaiʻi Public Adjusting · Free Policy Review</title>
+<meta name="description" content="Kuleana Claim Solutions — Hawaiʻi's public adjusters. We document, value, and negotiate the full scope of every property claim so home stays home. Free policy review. No recovery, no fee." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kuleana Claim Solutions" />
+<meta property="og:title" content="Kuleana Claim Solutions — Hawaiʻi Public Adjusting" />
+<meta property="og:description" content="When it's your claim, you deserve your own advocate. Rooted in honor, committed to your recovery." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Allura&display=swap" rel="stylesheet" />
+
+<style>
+/* ======================================================================
+   KULEANA CLAIM SOLUTIONS — LANDING PAGE
+   Brand: Terracotta 60% · Sage 30% · Off-White 8% · Charcoal 2%
+   Type:  Cinzel Decorative · Cinzel · Libre Baskerville · Allura
+   ====================================================================== */
+
+:root {
+  /* Core palette */
+  --terracotta:        #B5532A;
+  --terracotta-deep:   #9A4523;
+  --terracotta-soft:   #D88B5F;
+  --terracotta-mist:   rgba(181, 83, 42, 0.10);
+  --terracotta-line:   rgba(181, 83, 42, 0.28);
+
+  --sage:              #5A775C;
+  --sage-deep:         #455D4A;
+  --sage-darker:       #364B3A;
+  --sage-mist:         #C9D3C8;
+
+  --off-white:         #F4EFE6;
+  --cream:             #FAF9F5;
+  --cream-warm:        #EFE7D6;
+  --cream-deep:        #E8DFC9;
+
+  --charcoal:          #3D3D3D;
+  --charcoal-soft:     #6B6B6B;
+  --charcoal-faint:    #9A9A9A;
+
+  /* Type */
+  --serif-display:    'Cinzel', Georgia, serif;
+  --serif-decorative: 'Cinzel Decorative', Georgia, serif;
+  --serif-body:       'Libre Baskerville', Georgia, serif;
+  --script:           'Allura', cursive;
+
+  /* Rhythm */
+  --max-w: 1200px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--charcoal);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ======================================================================
+   TOP UTILITY BAR (forest green)
+   ====================================================================== */
+.utility-bar {
+  background: var(--sage-darker);
+  color: var(--cream);
+  font-family: var(--serif-body);
+  font-size: 12px;
+  padding: 14px var(--gutter);
+}
+.utility-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.utility-left {
+  display: flex; align-items: center; gap: 18px;
+  flex-wrap: wrap;
+}
+.utility-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: rgba(250,249,245,0.92);
+}
+.utility-item svg { width: 13px; height: 13px; }
+.utility-divider {
+  width: 3px; height: 3px; border-radius: 50%;
+  background: rgba(250,249,245,0.4);
+}
+.utility-fee-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--terracotta-soft);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+}
+.utility-fee-pill::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--terracotta-soft);
+}
+.lang-toggle {
+  display: inline-flex; align-items: center;
+  background: rgba(250,249,245,0.08);
+  border: 1px solid rgba(250,249,245,0.15);
+  border-radius: 100px;
+  padding: 4px 6px;
+  font-family: var(--serif-display);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+.lang-toggle span {
+  padding: 4px 10px;
+  border-radius: 100px;
+  color: rgba(250,249,245,0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lang-toggle span.active {
+  background: var(--cream);
+  color: var(--sage-darker);
+  font-weight: 700;
+}
+
+/* ======================================================================
+   PRIMARY NAV
+   ====================================================================== */
+.nav {
+  background: var(--cream);
+  padding: 24px var(--gutter);
+  border-bottom: 1px solid var(--cream-deep);
+}
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex; align-items: flex-start; gap: 12px;
+  border-left: 1px solid var(--terracotta-line);
+  padding-left: 14px;
+}
+.brand-mark {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 28px;
+  color: var(--sage-darker);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  line-height: 1;
+}
+.brand-sub {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  color: var(--charcoal-soft);
+  margin-top: 6px;
+}
+.nav-phone {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 16px;
+}
+.nav-phone svg { width: 16px; height: 16px; }
+
+/* Top accent line — terracotta to sage to terracotta gradient */
+.accent-line {
+  height: 3px;
+  background: linear-gradient(90deg,
+    var(--terracotta) 0%,
+    var(--terracotta-soft) 30%,
+    var(--sage-mist) 60%,
+    var(--cream-warm) 100%);
+}
+
+/* ======================================================================
+   GENERIC SECTIONS
+   ====================================================================== */
+.section {
+  padding: clamp(60px, 9vw, 120px) var(--gutter);
+}
+.section-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--serif-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  color: var(--terracotta);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.eyebrow::before, .eyebrow::after {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--terracotta);
+  display: inline-block;
+}
+.eyebrow.left-only::after { display: none; }
+
+.h-display {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  color: var(--sage-darker);
+  font-size: clamp(36px, 5.5vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+.h-display em {
+  font-style: italic;
+  color: var(--terracotta);
+  font-weight: 400;
+}
+.h-section {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  color: var(--sage-darker);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+}
+
+.lede {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--charcoal);
+  max-width: 60ch;
+}
+
+/* ======================================================================
+   HERO
+   ====================================================================== */
+.hero {
+  background: var(--cream);
+  padding: clamp(50px, 8vw, 90px) var(--gutter) clamp(60px, 9vw, 110px);
+}
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.hero-eyebrow {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  line-height: 1.45;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: '';
+  width: 26px;
+  height: 1px;
+  background: var(--terracotta);
+  flex-shrink: 0;
+}
+.hero-headline {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  color: var(--sage-darker);
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.hero-headline em {
+  font-style: italic;
+  color: var(--terracotta);
+  font-weight: 400;
+}
+.hero-body {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+  max-width: 52ch;
+}
+.hero-tagline {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 17px;
+  margin-bottom: 32px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--serif-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--terracotta);
+  color: var(--cream);
+  width: 100%;
+  max-width: 380px;
+}
+.btn-primary:hover {
+  background: var(--terracotta-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(181, 83, 42, 0.25);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--sage-darker);
+  border: 1px solid var(--sage);
+  width: 100%;
+  max-width: 380px;
+}
+.btn-secondary:hover {
+  background: var(--sage);
+  color: var(--cream);
+}
+.btn-arrow { width: 14px; height: 14px; }
+.btn-cream {
+  background: var(--cream);
+  color: var(--terracotta-deep);
+}
+.btn-cream:hover {
+  background: var(--off-white);
+  transform: translateY(-1px);
+}
+
+.hero-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.hero-divider {
+  height: 1px;
+  background: var(--cream-deep);
+  margin: 8px 0 22px;
+  max-width: 380px;
+}
+
+.fee-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(181, 83, 42, 0.08);
+  border: 1px solid var(--terracotta-line);
+  color: var(--terracotta);
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  padding: 10px 18px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.fee-pill svg { width: 12px; height: 12px; }
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: var(--serif-body);
+  font-size: 13px;
+  color: var(--charcoal-soft);
+}
+.hero-meta-item {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.hero-meta svg { width: 13px; height: 13px; color: var(--terracotta); }
+.hero-meta-dot {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--cream-deep);
+}
+
+/* Hero image card — moody sunset over the sea, NO peaks (Apex Rule) */
+.hero-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 4px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg,
+      #1a1410 0%,
+      #2c1f17 18%,
+      #4a2e1f 38%,
+      #7a4124 55%,
+      #b8602e 72%,
+      #d68b4e 85%,
+      #4a3624 100%);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.05),
+    0 24px 60px rgba(0,0,0,0.18);
+}
+.hero-card::before {
+  /* Cloud layer — soft horizontal bands, no sharp peaks */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 30% at 50% 18%, rgba(20,15,12,0.55), transparent 70%),
+    radial-gradient(ellipse 100% 20% at 30% 28%, rgba(40,25,18,0.6), transparent 70%),
+    radial-gradient(ellipse 90% 18% at 70% 22%, rgba(60,35,22,0.5), transparent 70%),
+    radial-gradient(ellipse 120% 8% at 50% 42%, rgba(0,0,0,0.3), transparent 70%);
+}
+.hero-card::after {
+  /* Ocean horizon — flat, never a peak */
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 14%;
+  background: linear-gradient(180deg, rgba(20,15,12,0.4) 0%, #0e0a07 100%);
+}
+.hero-card-frame {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(244, 239, 230, 0.25);
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-emblem {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 56px;
+  height: 56px;
+  z-index: 3;
+}
+.hero-card-quote {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  z-index: 3;
+  color: var(--cream);
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.55;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+.hero-card-quote-line {
+  width: 32px; height: 1px;
+  background: rgba(244, 239, 230, 0.7);
+  margin-bottom: 16px;
+}
+.hero-card-attrib {
+  margin-top: 14px;
+  font-family: var(--serif-display);
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: rgba(244, 239, 230, 0.85);
+}
+
+/* ======================================================================
+   UPLOAD SECTION
+   ====================================================================== */
+.upload-section {
+  background: linear-gradient(180deg, var(--cream-warm) 0%, var(--off-white) 100%);
+  padding: clamp(60px, 8vw, 100px) var(--gutter);
+}
+.upload-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+.upload-text .eyebrow { margin-bottom: 18px; }
+.upload-text h2 { margin-bottom: 18px; }
+.upload-card {
+  border: 1.5px dashed var(--terracotta);
+  border-radius: 6px;
+  padding: 44px 36px;
+  background: rgba(244, 239, 230, 0.35);
+  text-align: center;
+}
+.upload-icon {
+  width: 76px; height: 76px;
+  background: linear-gradient(135deg, var(--terracotta-soft), var(--terracotta));
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(181, 83, 42, 0.25);
+}
+.upload-icon svg { width: 26px; height: 26px; color: var(--cream); }
+.upload-cta {
+  font-family: var(--serif-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--terracotta-deep);
+  margin-bottom: 8px;
+  display: block;
+  cursor: pointer;
+}
+.upload-meta {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--charcoal-soft);
+  margin-bottom: 24px;
+}
+.upload-divider {
+  height: 1px;
+  background: var(--terracotta-line);
+  margin: 20px auto;
+  max-width: 80%;
+}
+.upload-pills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.upload-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--terracotta);
+  padding: 8px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.upload-pill:hover { color: var(--terracotta-deep); }
+.upload-pill svg { width: 12px; height: 12px; }
+
+/* ======================================================================
+   FOUNDER SECTION (sage)
+   ====================================================================== */
+.founder {
+  background: var(--sage-mist);
+  padding: clamp(60px, 9vw, 110px) var(--gutter);
+}
+.founder-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.portrait {
+  position: relative;
+  aspect-ratio: 4/5;
+  background:
+    linear-gradient(180deg,
+      #3a3530 0%,
+      #2a2520 25%,
+      #1c1814 60%,
+      #0c0a08 100%);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.2);
+}
+.portrait::before {
+  /* Subtle warm spotlight at top, suggesting interior light */
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 20%;
+  right: 20%;
+  height: 50%;
+  background: radial-gradient(ellipse at center,
+    rgba(212, 165, 116, 0.25) 0%,
+    transparent 70%);
+}
+.portrait-frame {
+  position: absolute;
+  inset: 16px 16px 110px;
+  border: 1px solid rgba(244,239,230,0.18);
+  pointer-events: none;
+}
+.portrait-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 28px 32px 32px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.65) 60%);
+}
+.portrait-name {
+  font-family: var(--script);
+  font-size: 40px;
+  color: var(--cream);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.portrait-role {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--cream);
+  opacity: 0.9;
+}
+
+.founder-content .eyebrow { margin-bottom: 22px; }
+.founder-content h2 { margin-bottom: 24px; }
+.founder-content .lede { margin-bottom: 28px; }
+.founder-signature {
+  font-family: var(--script);
+  font-size: 56px;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.founder-attribution {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--charcoal-soft);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.founder-divider {
+  height: 1px;
+  background: rgba(90, 119, 92, 0.35);
+  margin: 0 0 28px;
+  max-width: 480px;
+}
+.founder-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.founder-stat {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.founder-stat-icon {
+  width: 42px; height: 42px;
+  background: var(--cream);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.founder-stat-icon svg {
+  width: 18px; height: 18px;
+  color: var(--terracotta);
+}
+.founder-stat-figure {
+  font-family: var(--serif-body);
+  font-size: 22px;
+  color: var(--sage-darker);
+  line-height: 1.1;
+}
+.founder-stat-label {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--charcoal-soft);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ======================================================================
+   DAMAGE GRID
+   ====================================================================== */
+.damages {
+  background: var(--cream);
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.section-header .eyebrow {
+  display: inline-flex;
+  margin-bottom: 22px;
+}
+.section-header h2 { margin-bottom: 18px; }
+.section-header p {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--charcoal);
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.damage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.damage-card {
+  background: var(--cream);
+  border: 1px solid rgba(90, 119, 92, 0.22);
+  border-radius: 6px;
+  padding: 32px 24px;
+  transition: all 0.3s ease;
+}
+.damage-card:hover {
+  border-color: var(--sage);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(54, 75, 58, 0.10);
+}
+.damage-icon {
+  width: 50px; height: 50px;
+  background: var(--terracotta-mist);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+.damage-icon svg { width: 22px; height: 22px; color: var(--terracotta); }
+.damage-card h3 {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--sage-darker);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+.damage-card p {
+  font-family: var(--serif-body);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--charcoal);
+}
+
+/* ======================================================================
+   DELAYED / UNDERPAID / DENIED
+   ====================================================================== */
+.status-section {
+  background: var(--cream-warm);
+}
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.status-card {
+  background: var(--cream);
+  border-radius: 6px;
+  padding: 36px 28px;
+  border-top: 3px solid var(--terracotta);
+}
+.status-icon {
+  margin-bottom: 24px;
+}
+.status-icon svg {
+  width: 26px; height: 26px;
+  color: var(--terracotta);
+}
+.status-card h3 {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--sage-darker);
+  margin-bottom: 14px;
+}
+.status-card p {
+  font-family: var(--serif-body);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--charcoal);
+}
+
+/* ======================================================================
+   KULEANA DEFINITION (deep sage)
+   ====================================================================== */
+.definition {
+  background: var(--sage-darker);
+  color: var(--cream);
+  padding: clamp(70px, 10vw, 130px) var(--gutter);
+}
+.definition-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.definition-eyebrow {
+  font-family: var(--serif-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  color: var(--terracotta-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.definition-eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--terracotta-soft);
+}
+.definition-pron {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: rgba(244, 239, 230, 0.55);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+.definition h2 {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.005em;
+}
+.definition-body {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.85;
+  color: rgba(244, 239, 230, 0.85);
+  margin-bottom: 24px;
+  max-width: 55ch;
+}
+.definition-italic {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: rgba(244, 239, 230, 0.65);
+  font-size: 15.5px;
+}
+.definition-quote {
+  padding-top: 50px;
+}
+.definition-quote p {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--cream);
+  margin-bottom: 22px;
+  max-width: 42ch;
+}
+.definition-quote-attrib {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: rgba(244, 239, 230, 0.55);
+  text-transform: uppercase;
+}
+
+/* ======================================================================
+   PROCESS — Four steps. One kuleana.
+   ====================================================================== */
+.process {
+  background: var(--sage-mist);
+  padding: clamp(60px, 9vw, 110px) var(--gutter);
+}
+.process-inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.process-list {
+  margin-top: 44px;
+}
+.process-step {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(90, 119, 92, 0.22);
+  align-items: start;
+}
+.process-step:last-child { border-bottom: none; }
+.process-num {
+  font-family: var(--serif-display);
+  font-weight: 700;
+  font-size: 38px;
+  color: var(--terracotta);
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+.process-step h3 {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--sage-darker);
+  margin-bottom: 12px;
+}
+.process-step p {
+  font-family: var(--serif-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--charcoal);
+  max-width: 60ch;
+}
+
+/* ======================================================================
+   FAQ
+   ====================================================================== */
+.faq {
+  background: var(--cream);
+}
+.faq-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.faq-intro h2 { margin-bottom: 22px; }
+.faq-intro p {
+  font-family: var(--serif-body);
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--charcoal);
+  max-width: 38ch;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.faq-card {
+  background: var(--cream-warm);
+  border-radius: 6px;
+  padding: 28px 26px;
+}
+.faq-card h3 {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--terracotta);
+  margin-bottom: 16px;
+}
+.faq-card p {
+  font-family: var(--serif-body);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--charcoal);
+}
+
+/* ======================================================================
+   TESTIMONIAL
+   ====================================================================== */
+.testimonial {
+  background: var(--cream);
+  padding: clamp(50px, 8vw, 90px) var(--gutter) clamp(60px, 9vw, 110px);
+}
+.testimonial-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid var(--cream-deep);
+  padding-top: clamp(50px, 7vw, 80px);
+}
+.testimonial-mark {
+  font-family: var(--serif-display);
+  font-size: 60px;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+.testimonial-quote {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.65;
+  color: var(--sage-darker);
+  margin-bottom: 28px;
+  max-width: 62ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-attrib {
+  font-family: var(--serif-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--charcoal-soft);
+  text-transform: uppercase;
+}
+
+/* ======================================================================
+   FINAL CTA (terracotta gradient)
+   ====================================================================== */
+.final-cta {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 100%, #c66b40 0%, transparent 70%),
+    linear-gradient(180deg, #9a4523 0%, #b5532a 50%, #c46a3f 100%);
+  color: var(--cream);
+  padding: clamp(70px, 10vw, 130px) var(--gutter);
+  text-align: center;
+}
+.final-cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.final-cta .eyebrow {
+  color: rgba(244, 239, 230, 0.75);
+  justify-content: center;
+}
+.final-cta .eyebrow::before, .final-cta .eyebrow::after {
+  background: rgba(244, 239, 230, 0.55);
+}
+.final-cta h2 {
+  font-family: var(--serif-display);
+  font-weight: 400;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.15;
+  color: var(--cream);
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
+}
+.final-cta-body {
+  font-family: var(--serif-body);
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(244, 239, 230, 0.92);
+  margin-bottom: 38px;
+  max-width: 58ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: var(--cream);
+  color: var(--terracotta-deep);
+  font-family: var(--serif-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  padding: 20px 38px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-bottom: 32px;
+}
+.final-cta-btn:hover {
+  background: var(--off-white);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+.final-cta-signature {
+  font-family: var(--script);
+  font-size: 56px;
+  color: var(--cream-warm);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.final-cta-sig-label {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: rgba(244, 239, 230, 0.7);
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+.final-cta-divider {
+  height: 1px;
+  background: rgba(244, 239, 230, 0.25);
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+.final-cta-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  font-family: var(--serif-body);
+  font-size: 14px;
+  color: var(--cream);
+}
+.final-cta-contact-item {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.final-cta-contact svg { width: 14px; height: 14px; }
+
+/* ======================================================================
+   FOOTER (forest green)
+   ====================================================================== */
+.footer-top {
+  background: var(--sage-darker);
+  padding: clamp(60px, 8vw, 90px) var(--gutter) 24px;
+  border-top: 3px solid var(--terracotta);
+  text-align: center;
+  color: var(--cream);
+}
+.footer-mahalo {
+  font-family: var(--script);
+  font-size: clamp(48px, 6vw, 68px);
+  color: var(--cream-warm);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.footer-mahalo-sub {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: rgba(244, 239, 230, 0.75);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.footer-main {
+  background: var(--sage-darker);
+  padding: 50px var(--gutter) 36px;
+  border-top: 1px solid rgba(244, 239, 230, 0.12);
+  color: var(--cream);
+}
+.footer-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: clamp(28px, 4vw, 50px);
+}
+.footer-brand-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.footer-brand-mark {
+  width: 24px; height: 24px;
+  border: 1px solid var(--cream-warm);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.footer-brand-mark svg {
+  width: 10px; height: 10px;
+  color: var(--cream-warm);
+}
+.footer-brand-text {
+  font-family: var(--serif-decorative);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.footer-brand-sub {
+  font-family: var(--serif-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: rgba(244, 239, 230, 0.7);
+  margin-top: 4px;
+}
+.footer-tagline {
+  font-family: var(--serif-body);
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(244, 239, 230, 0.7);
+  margin-top: 20px;
+  max-width: 24ch;
+  line-height: 1.55;
+}
+.footer-col h4 {
+  font-family: var(--serif-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--cream-warm);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col li {
+  margin-bottom: 10px;
+}
+.footer-col a {
+  font-family: var(--serif-body);
+  font-size: 14px;
+  color: rgba(244, 239, 230, 0.82);
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--terracotta-soft); }
+
+.footer-bottom {
+  background: var(--sage-darker);
+  padding: 22px var(--gutter);
+  border-top: 1px solid rgba(244, 239, 230, 0.12);
+  font-family: var(--serif-body);
+  font-size: 12px;
+  color: rgba(244, 239, 230, 0.55);
+}
+.footer-bottom-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ======================================================================
+   RESPONSIVE
+   ====================================================================== */
+@media (max-width: 900px) {
+  .hero-inner,
+  .upload-inner,
+  .founder-inner,
+  .definition-inner,
+  .faq-inner {
+    grid-template-columns: 1fr;
+  }
+  .definition-quote { padding-top: 0; }
+  .damage-grid { grid-template-columns: repeat(2, 1fr); }
+  .status-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .hero-card { max-width: 480px; margin: 0 auto; }
+  .portrait { max-width: 380px; margin: 0 auto; }
+  .utility-left { font-size: 11px; }
+  .utility-bar { font-size: 11px; }
+}
+
+@media (max-width: 560px) {
+  .damage-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom-inner { justify-content: center; text-align: center; }
+  .process-step { grid-template-columns: 60px 1fr; gap: 16px; }
+  .process-num { font-size: 28px; }
+  .utility-divider:nth-child(2) { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===================================================================
+     UTILITY BAR
+     =================================================================== -->
+<div class="utility-bar">
+  <div class="utility-inner">
+    <div class="utility-left">
+      <span class="utility-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <strong>(808) 444-9420</strong>
+      </span>
+      <span class="utility-item">· Speak with your adjuster</span>
+      <span class="utility-divider"></span>
+      <span class="utility-item">HI License #19246735</span>
+      <span class="utility-divider"></span>
+      <span class="utility-fee-pill">NO RECOVERY, NO FEE.</span>
+    </div>
+    <div class="lang-toggle">
+      <span class="active">EN</span>
+      <span>ʻOLELO</span>
+      <span>ES</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================================================
+     NAV
+     =================================================================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div>
+        <div class="brand-mark">Kuleana</div>
+        <span class="brand-sub">CLAIM SOLUTIONS</span>
+      </div>
+    </div>
+    <a href="tel:8084449420" class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <em>(808) 444-9420</em>
+    </a>
+  </div>
+</nav>
+
+<div class="accent-line"></div>
+
+<!-- ===================================================================
+     HERO
+     =================================================================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">
+        <span>Rooted in honor, committed to your recovery.</span>
+      </div>
+      <h1 class="hero-headline">
+        When it's your claim,<br>
+        <em>you deserve your<br>
+        own advocate.</em>
+      </h1>
+      <p class="hero-body">
+        Kuleana Claim Solutions was built for Hawaiʻi — for the families who weather what these islands send, and deserve someone in their corner when it's time to rebuild. We document, value, and negotiate every claim in full, so home stays home.
+      </p>
+      <p class="hero-tagline"><em>Your claim is our Kuleana.</em></p>
+
+      <div class="hero-ctas">
+        <a href="#schedule" class="btn btn-primary">
+          Schedule a free inspection
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#upload" class="btn btn-secondary">
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          Upload policy &amp; documents
+        </a>
+      </div>
+
+      <div class="hero-divider"></div>
+
+      <div class="fee-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        NO RECOVERY, NO FEE.
+      </div>
+
+      <div class="hero-meta">
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          HI License #19246735
+        </span>
+        <span class="hero-meta-dot"></span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (808) 444-9420
+        </span>
+        <span class="hero-meta-dot"></span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          24-Hour Turnaround
+        </span>
+      </div>
+    </div>
+
+    <!-- Hero image card — moody sunset over the sea, NO peaks -->
+    <div class="hero-card">
+      <div class="hero-card-frame"></div>
+      <!-- K emblem (triquetra-style) -->
+      <svg class="hero-emblem" viewBox="0 0 60 60" fill="none" stroke="rgba(244,239,230,0.85)" stroke-width="1.2">
+        <circle cx="30" cy="30" r="28"/>
+        <path d="M22 18 Q22 30 30 30 Q22 30 22 42"/>
+        <path d="M38 18 Q38 30 30 30 Q38 30 38 42"/>
+        <path d="M30 30 L30 18 M30 30 L30 42"/>
+        <text x="30" y="34" text-anchor="middle" font-family="Cinzel Decorative" font-size="13" font-weight="700" fill="rgba(244,239,230,0.85)" stroke="none">K</text>
+      </svg>
+
+      <div class="hero-card-quote">
+        <div class="hero-card-quote-line"></div>
+        Your home was damaged.<br>
+        Your claim deserves to be taken<br>
+        seriously. And so do you.
+        <div class="hero-card-attrib">— Kuleana Claim Solutions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     UPLOAD SECTION
+     =================================================================== -->
+<section class="upload-section" id="upload">
+  <div class="upload-inner">
+    <div class="upload-text">
+      <div class="eyebrow left-only">Free · 24-Hour Turnaround</div>
+      <h2 class="h-section">
+        Upload your policy.<br>
+        We'll read it for free.
+      </h2>
+      <p class="lede" style="margin-top: 18px;">
+        Drop your declarations page and any carrier correspondence. A licensed public adjuster reviews it personally and calls you within one business day. No obligation, no fee until we recover.
+      </p>
+    </div>
+
+    <div class="upload-card">
+      <div class="upload-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+      </div>
+      <a href="#schedule" class="upload-cta">UPLOAD POLICY &amp; DOCUMENTS</a>
+      <div class="upload-meta">PDF, JPG, or PNG · Max 25MB · Secure transfer</div>
+      <div class="upload-divider"></div>
+      <div class="upload-pills">
+        <span class="upload-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          Declarations Page
+        </span>
+        <span class="upload-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          Carrier Letter
+        </span>
+        <span class="upload-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          Photos
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     FOUNDER SECTION
+     =================================================================== -->
+<section class="founder">
+  <div class="founder-inner">
+    <div class="portrait">
+      <div class="portrait-frame"></div>
+      <div class="portrait-overlay">
+        <div class="portrait-name">Caren Almuina</div>
+      </div>
+    </div>
+
+    <div class="founder-content">
+      <div class="eyebrow left-only">Founder · Licensed Public Adjuster</div>
+      <h2 class="h-section">
+        For the homeowner,<br>
+        never the carrier.
+      </h2>
+      <p class="lede">
+        I started this work during Hurricane Ian, walking through homes with the roofs peeled back and the living rooms full of rain — watching families discover, at the worst possible moment, that their policy didn't cover what they thought it did. What I've never forgotten is the other half of it: neighbors going nine days without power and still showing up for each other every morning to help clean up. Kuleana exists so no homeowner in Hawaiʻi has to face a carrier alone. We sit with you on the lānai, walk the property, and write the record that gets your home put back the way it was.
+      </p>
+      <div class="founder-signature">Caren</div>
+      <div class="founder-attribution">Licensed Public Adjuster · DCCA, State of Hawaiʻi</div>
+      <div class="founder-divider"></div>
+
+      <div class="founder-stats">
+        <div class="founder-stat">
+          <div class="founder-stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+          </div>
+          <div>
+            <div class="founder-stat-figure">45X+</div>
+            <div class="founder-stat-label">Avg. Uplift vs. Carrier's First Offer</div>
+          </div>
+        </div>
+        <div class="founder-stat">
+          <div class="founder-stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="founder-stat-figure">Licensed</div>
+            <div class="founder-stat-label">DCCA · State of Hawaiʻi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     DAMAGES GRID
+     =================================================================== -->
+<section class="section damages">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Types of Damage We Handle</div>
+      <h2 class="h-section">A steady hand for every loss.</h2>
+      <p>Storm-driven, water-borne, fire-charred or quietly hidden — we document what carriers leave out, so your settlement reflects the full scope of what you've lost.</p>
+    </div>
+
+    <div class="damage-grid">
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h12a3 3 0 1 0-3-3"/><path d="M3 14h17a3 3 0 1 1-3 3"/><path d="M3 11h10"/></svg>
+        </div>
+        <h3>Hurricane &amp; Wind</h3>
+        <p>Roof uplift, interior water intrusion, contents loss. We document scope before the carrier closes the file.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 C8 8 6 12 6 15 a6 6 0 0 0 12 0 c0-3-2-7-6-13z"/></svg>
+        </div>
+        <h3>Water &amp; Flood</h3>
+        <p>Hidden moisture and substrate damage are the most under-paid line items in any claim. We find them.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 c-2 4 -5 6 -5 11 a5 5 0 0 0 10 0 c0-2 -1-3 -2-4 -1 1 -2 0 -2-2 0-2 1-3 -1-5z"/></svg>
+        </div>
+        <h3>Fire &amp; Smoke</h3>
+        <p>From soot remediation to total rebuild, we take our own measurements and build the Xactimate estimate ourselves, line by line — never a carrier-side number.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="12" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3>Mold &amp; Moisture</h3>
+        <p>Mold isn't a maintenance issue when it follows a covered loss. We tie cause to coverage in writing.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a5 5 0 0 0-5-5 5 5 0 0 0-5 5 4 4 0 0 0 0 8h10a4 4 0 0 0 0-8z"/></svg>
+        </div>
+        <h3>Hail &amp; Storm</h3>
+        <p>Granular loss on roofs, broken openings, screen damage — fully measured and matched to policy.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21l9-9"/><circle cx="14" cy="8" r="4"/><path d="M17 5l4-4"/></svg>
+        </div>
+        <h3>Frozen Plumbing</h3>
+        <p>Burst pipes and resulting damage — documented before drywall is replaced and evidence is lost.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Theft &amp; Vandalism</h3>
+        <p>Inventoried contents, broken openings, repair scope — all on the record carriers respect.</p>
+      </div>
+
+      <div class="damage-card">
+        <div class="damage-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <h3>Denied Claims</h3>
+        <p>If your claim was denied, low-balled, or closed prematurely, we re-open it with a documented record.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     DELAYED / UNDERPAID / DENIED
+     =================================================================== -->
+<section class="section status-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">If Your Claim Has Been…</div>
+      <h2 class="h-section">Delayed. Underpaid. Denied.</h2>
+      <p>You have the right to a second opinion. We step in at any point in the claim — even after a denial — and rebuild the record so your file can be heard fairly.</p>
+    </div>
+
+    <div class="status-grid">
+      <div class="status-card">
+        <div class="status-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>If your claim is delayed</h3>
+        <p>Carriers have statutory timelines. We document every missed deadline, every unanswered email, and push the file to the front of the queue with the right paper trail.</p>
+      </div>
+
+      <div class="status-card">
+        <div class="status-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l-2 4 2 4M5 8h14M19 8l2 4-2 4M5 16h14"/></svg>
+        </div>
+        <h3>If your claim is underpaid</h3>
+        <p>We re-measure, re-investigate, and rebuild the Xactimate estimate line by line — confirmed against your policy, not the carrier's — and show, with photos and moisture readings, exactly the dollars left on the table.</p>
+      </div>
+
+      <div class="status-card">
+        <div class="status-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <h3>If your claim is denied</h3>
+        <p>A denial is a position, not a verdict. With a properly documented file we re-open the claim, address the cited exclusions, and bring it back to a fair recovery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     KULEANA DEFINITION
+     =================================================================== -->
+<section class="definition">
+  <div class="definition-inner">
+    <div>
+      <div class="definition-eyebrow">Kuleana · n.</div>
+      <div class="definition-pron">[ koo·leh·AH·nah ]</div>
+      <h2>A word that carries both responsibility and privilege.</h2>
+      <p class="definition-body">
+        A Hawaiian word with no clean English translation. It carries both responsibility and privilege — a sacred, reciprocal duty between a person and the role they hold.
+      </p>
+      <p class="definition-italic"><em>For us, your claim is a kuleana.</em></p>
+    </div>
+
+    <div class="definition-quote">
+      <p>"We don't represent insurance companies. We represent the home, the family, and the policy as written."</p>
+      <div class="definition-quote-attrib">— The Kuleana Standard</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     PROCESS
+     =================================================================== -->
+<section class="process">
+  <div class="process-inner">
+    <div class="section-header" style="margin-bottom: 0;">
+      <div class="eyebrow">How We Work Together</div>
+      <h2 class="h-section">Four steps. One kuleana.</h2>
+    </div>
+
+    <div class="process-list">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div>
+          <h3>Free Policy Review</h3>
+          <p>We read your declarations page, exclusions, and endorsements line by line. No charge, no obligation.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div>
+          <h3>On-site Documentation</h3>
+          <p>We measure the property ourselves, investigate every affected area, and build the full Xactimate estimate against what your policy actually covers. The record carriers respect.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div>
+          <h3>Carrier Negotiation</h3>
+          <p>We submit, defend, and re-submit until every covered loss is honored. You handle your home; we handle the file.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <div>
+          <h3>Settlement &amp; Recovery</h3>
+          <p>Funds flow to you, not us — we are paid only as a small percentage of the recovery, never up-front.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     FAQ
+     =================================================================== -->
+<section class="section faq">
+  <div class="faq-inner">
+    <div class="faq-intro">
+      <div class="eyebrow left-only">What People Ask Us</div>
+      <h2 class="h-section">The questions<br>worth a real answer.</h2>
+      <p>Pick up the phone, talk story, ask anything. There is no question too small when your home is involved.</p>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-card">
+        <h3>"What does my policy actually cover?"</h3>
+        <p>More than your carrier may let on. We read your declarations page, exclusions, and endorsements together — and translate the legalese into plain English so you know what you're owed.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3>"My claim was denied. Is it really over?"</h3>
+        <p>Almost never. A denial is a position, not a verdict. With proper documentation — photos, moisture readings, a written narrative — most denied claims can be re-opened and recovered.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3>"Will hiring you slow my settlement down?"</h3>
+        <p>The opposite. A complete, well-documented file moves faster through a carrier's queue than one they can quietly under-pay. We do the work that gets your claim taken seriously.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3>"What does this cost me up front?"</h3>
+        <p>Nothing. The initial policy review is free, and we're only paid a small percentage of what we actually recover for you. If there's no recovery, there's no fee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     TESTIMONIAL
+     =================================================================== -->
+<section class="testimonial">
+  <div class="testimonial-inner">
+    <div class="testimonial-mark">"</div>
+    <p class="testimonial-quote">
+      After Hurricane Lane, our carrier closed the file at $48,000 and walked away. Kuleana re-opened the claim, scoped it properly, and recovered $312,000. I would not have known what was missing.
+    </p>
+    <div class="testimonial-attrib">Mahealani K. · Kona Homeowner · Hurricane Lane Recovery</div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     FINAL CTA
+     =================================================================== -->
+<section class="final-cta" id="schedule">
+  <div class="final-cta-inner">
+    <div class="eyebrow">When You're Ready</div>
+    <h2>Let's begin together.</h2>
+    <p class="final-cta-body">
+      A free policy review. Thirty minutes, no obligation. We'll tell you honestly what your claim is worth, and walk beside you through exactly what happens next.
+    </p>
+    <a href="tel:8084449420" class="final-cta-btn">
+      Schedule a consultation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="final-cta-signature">Caren</div>
+    <div class="final-cta-sig-label">Looking forward to meeting you.</div>
+    <div class="final-cta-divider"></div>
+    <div class="final-cta-contact">
+      <span class="final-cta-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (808) 444-9420
+      </span>
+      <span class="final-cta-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        contact@kuleanaclaims.com
+      </span>
+      <span class="final-cta-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        1001 Bishop St, Honolulu, HI 96813
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     FOOTER
+     =================================================================== -->
+<div class="footer-top">
+  <div class="footer-mahalo">Mahalo nui</div>
+  <div class="footer-mahalo-sub">For trusting us with the place you call home.</div>
+</div>
+
+<footer class="footer-main">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-block">
+        <div class="footer-brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </div>
+        <div>
+          <div class="footer-brand-text">KULEANA</div>
+          <div class="footer-brand-sub">CLAIM SOLUTIONS</div>
+        </div>
+      </div>
+      <p class="footer-tagline"><em>Rooted in honor, committed to your recovery.</em></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Damages</h4>
+      <ul>
+        <li><a href="#">Hurricane &amp; Wind</a></li>
+        <li><a href="#">Water &amp; Flood</a></li>
+        <li><a href="#">Fire &amp; Smoke</a></li>
+        <li><a href="#">Mold &amp; Moisture</a></li>
+        <li><a href="#">Hail &amp; Storm</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Firm</h4>
+      <ul>
+        <li><a href="#">Our Kuleana</a></li>
+        <li><a href="#">Process</a></li>
+        <li><a href="#">Results</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:8084449420">(808) 444-9420</a></li>
+        <li><a href="mailto:contact@kuleanaclaims.com">contact@kuleanaclaims.com</a></li>
+        <li>1001 Bishop St, Honolulu, Hawaiʻi 96813</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <div class="footer-bottom-inner">
+    <div>© 2026 Kuleana Claim Solutions · Licensed Public Adjuster, State of Hawaiʻi (DCCA)</div>
+    <div>HI License #19246735</div>
+  </div>
+</div>
+
+<script>
+// Language toggle
+document.querySelectorAll('.lang-toggle span').forEach(s => {
+  s.addEventListener('click', () => {
+    document.querySelectorAll('.lang-toggle span').forEach(x => x.classList.remove('active'));
+    s.classList.add('active');
+  });
+});
+
+// Smooth scroll for in-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
