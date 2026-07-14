@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequently Asked Questions — Kuleana Claim Solutions</title>
+<meta name="description" content="Honest answers about hiring a Hawaiʻi public adjuster: what it costs, how the process works, and what to expect when you work with Kuleana Claim Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cinzel+Decorative:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Allura&display=swap" rel="stylesheet">
+<style>
+  /* =========================================================================
+     Tokens — mirrors kuleanaclaims.com main site (.kca-page scope)
+     ========================================================================= */
+  :root {
+    --kca-terracotta:        #B8501F;
+    --kca-terracotta-deep:   #8A3C16;
+    --kca-terracotta-glow:   #D87B4F;
+
+    --kca-green:             #5A775C;
+    --kca-green-deep:        #3F5A41;
+    --kca-green-darker:      #2E4231;
+    --kca-green-mist:        #B8C7B9;
+    --kca-green-pale:        #DCE5DA;
+
+    --kca-gold:              #F7DBA7;
+    --kca-gold-soft:         #FBEBC9;
+
+    --kca-cream:             #FAF5EA;
+    --kca-cream-deep:        #F2EAD6;
+    --kca-paper:             #EFE6CF;
+
+    --kca-dark:              #2A2620;
+    --kca-dark-soft:         #4F4A41;
+    --kca-dark-muted:        #8A8175;
+
+    --kca-hairline:          #D9CFB6;
+    --kca-hairline-dark:     rgba(250,245,234,0.18);
+
+    --kca-font-display:  'Cormorant Garamond', 'Cormorant', Georgia, serif;
+    --kca-font-headline: 'Cinzel', Georgia, serif;
+    --kca-font-body:     'Lora', 'Source Serif Pro', Georgia, serif;
+    --kca-font-hand:     'Allura', 'Pinyon Script', 'Brush Script MT', cursive;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--kca-cream);
+    color: var(--kca-dark);
+    font-family: var(--kca-font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .kca-eyebrow {
+    font-family: var(--kca-font-body);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    color: var(--kca-terracotta);
+    display: inline-flex; align-items: center; gap: 12px;
+    margin: 0 0 18px;
+  }
+  .kca-eyebrow--center { justify-content: center; }
+  .kca-eyebrow::before,
+  .kca-eyebrow--center::after {
+    content: ""; width: 28px; height: 1px; background: currentColor; opacity: 0.65;
+  }
+
+  .kca-anchor {
+    font-family: var(--kca-font-display);
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(34px, 4.4vw, 56px);
+    letter-spacing: -0.005em;
+    line-height: 1.12;
+    color: var(--kca-green-deep);
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .kca-anchor em {
+    font-family: var(--kca-font-display);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--kca-terracotta);
+  }
+  .kca-anchor--light { color: var(--kca-cream); }
+  .kca-anchor--light em { color: var(--kca-gold); }
+
+  .kca-body { font-family: var(--kca-font-body); font-size: 17px; line-height: 1.7; color: var(--kca-dark); margin: 0; }
+  .kca-body--muted { color: var(--kca-dark-soft); }
+
+  .kca-btn {
+    font-family: var(--kca-font-body);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 16px 28px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    background: var(--kca-terracotta);
+    color: var(--kca-cream);
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 12px;
+    text-decoration: none;
+    transition: background 240ms cubic-bezier(.22,.61,.36,1),
+                color 240ms cubic-bezier(.22,.61,.36,1),
+                border-color 240ms cubic-bezier(.22,.61,.36,1),
+                transform 160ms cubic-bezier(.22,.61,.36,1);
+  }
+  .kca-btn:hover  { background: var(--kca-terracotta-deep); }
+  .kca-btn:active { transform: translateY(1px); }
+  .kca-btn--lg    { padding: 18px 34px; font-size: 13px; }
+  .kca-btn--cream { background: var(--kca-cream); color: var(--kca-terracotta); border-color: var(--kca-cream); }
+  .kca-btn--cream:hover { background: var(--kca-gold); color: var(--kca-terracotta-deep); }
+  .kca-btn--ghost-light {
+    background: transparent; color: var(--kca-cream);
+    border-color: rgba(250,245,234,0.55);
+  }
+  .kca-btn--ghost-light:hover { background: rgba(250,245,234,0.1); border-color: var(--kca-cream); }
+
+  /* =========================================================================
+     Top nav — utility bar + main nav (echoes the main site)
+     ========================================================================= */
+  .kca-nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250,245,234,0.96);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--kca-hairline);
+  }
+  .kca-utility {
+    background: var(--kca-green-darker);
+    color: var(--kca-cream);
+    border-bottom: 1px solid rgba(247,219,167,0.16);
+  }
+  .kca-utility__inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 7px clamp(20px, 4vw, 56px);
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    min-height: 36px;
+    font-family: var(--kca-font-body);
+    font-size: 12px;
+  }
+  .kca-utility__left { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; color: rgba(250,245,234,0.88); }
+  .kca-utility__left > * { white-space: nowrap; }
+  .kca-utility__phone {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--kca-cream); border: none; text-decoration: none; font-weight: 600;
+  }
+  .kca-utility__phone:hover { color: var(--kca-gold); }
+  .kca-utility__phone-lbl { color: rgba(250,245,234,0.66); font-weight: 400; }
+  .kca-utility__sep { color: rgba(247,219,167,0.36); }
+  .kca-utility__lic { letter-spacing: 0.08em; color: rgba(250,245,234,0.78); }
+  .kca-utility__badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    font-size: 10.5px; color: var(--kca-gold);
+  }
+  .kca-utility__badge::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--kca-gold); box-shadow: 0 0 0 3px rgba(247,219,167,0.18);
+  }
+
+  .kca-nav__inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 14px clamp(20px, 4vw, 56px);
+    display: flex; align-items: center; gap: 24px;
+    min-height: 88px; flex-wrap: wrap;
+  }
+  .kca-nav__brand { display: inline-flex; align-items: center; gap: 14px; flex-shrink: 0; text-decoration: none; }
+  .kca-nav__wordmark { display: flex; flex-direction: column; line-height: 1; }
+  .kca-nav__wordmark-1 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 600; font-size: 28px; line-height: 1;
+    letter-spacing: 0.02em; color: var(--kca-terracotta);
+  }
+  .kca-nav__wordmark-1 .wk { font-family: 'Cinzel Decorative', Georgia, serif; }
+  .kca-nav__wordmark-2 {
+    font-family: var(--kca-font-body);
+    font-weight: 700; font-size: 9.5px;
+    letter-spacing: 0.36em; text-transform: uppercase;
+    color: var(--kca-green-deep); margin-top: 5px;
+  }
+  .kca-nav__back {
+    font-family: var(--kca-font-display); font-style: italic; font-weight: 600;
+    font-size: 16px; color: var(--kca-green-deep);
+    text-decoration: none; border-bottom: 1px solid transparent;
+    transition: color 200ms ease, border-color 200ms ease;
+    margin-left: 8px;
+  }
+  .kca-nav__back:hover { color: var(--kca-terracotta); border-color: currentColor; }
+  .kca-nav__cta { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+  .kca-nav__phone {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--kca-font-display); font-weight: 600; font-style: italic;
+    font-size: 17px; color: var(--kca-terracotta);
+    border: none; text-decoration: none; white-space: nowrap;
+  }
+  .kca-nav__phone:hover { color: var(--kca-terracotta-deep); }
+  .kca-nav__horizon { height: 3px; background: linear-gradient(90deg, var(--kca-terracotta) 0%, var(--kca-green) 60%, var(--kca-gold) 100%); }
+
+  @media (max-width: 640px) {
+    .kca-utility__lic, .kca-utility__phone-lbl { display: none; }
+    .kca-nav__wordmark-2 { display: none; }
+    .kca-nav__inner { min-height: auto; padding-top: 16px; padding-bottom: 16px; }
+  }
+  @media (max-width: 460px) {
+    .kca-nav__back { margin-left: 0; }
+    .kca-nav__cta { width: 100%; margin-left: 0; justify-content: flex-start; }
+  }
+
+  /* =========================================================================
+     FAQ hero
+     ========================================================================= */
+  .kca-faq-hero { padding: clamp(56px, 8vw, 96px) 0 clamp(32px, 5vw, 48px); background: var(--kca-cream); text-align: center; }
+  .kca-faq-hero__inner { max-width: 720px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+  .kca-faq-hero .kca-anchor { text-align: center; }
+  .kca-faq-hero__lede { max-width: 58ch; margin: 0 auto; text-align: center; }
+
+  /* Jump nav to the four groups */
+  .kca-faq-jump {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 8px;
+    max-width: 720px; margin: 32px auto 0; padding: 0 clamp(20px, 4vw, 56px);
+  }
+  .kca-faq-jump a {
+    font-family: var(--kca-font-body); font-weight: 600; font-size: 12px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--kca-green-deep);
+    background: var(--kca-cream-deep);
+    border: 1px solid var(--kca-hairline);
+    border-radius: 999px;
+    padding: 9px 18px;
+    text-decoration: none;
+    transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+    white-space: nowrap;
+  }
+  .kca-faq-jump a:hover { background: var(--kca-terracotta); color: var(--kca-cream); border-color: var(--kca-terracotta); }
+
+  /* =========================================================================
+     FAQ groups
+     ========================================================================= */
+  .kca-faq-section { padding: clamp(40px, 6vw, 72px) 0 clamp(72px, 9vw, 112px); }
+  .kca-faq-groups {
+    max-width: 820px; margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 56px);
+    display: flex; flex-direction: column; gap: clamp(48px, 6vw, 72px);
+  }
+  .kca-faq-group__head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 28px; scroll-margin-top: 100px; }
+  .kca-faq-group__num {
+    font-family: var(--kca-font-display); font-style: italic; font-weight: 600;
+    font-size: 22px; color: var(--kca-terracotta-glow); flex-shrink: 0;
+  }
+  .kca-faq-group__title {
+    font-family: var(--kca-font-headline); font-weight: 600;
+    font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--kca-green-deep); margin: 0;
+    padding-bottom: 10px; border-bottom: 2px solid var(--kca-hairline);
+    flex: 1;
+  }
+
+  .kca-faq-list { display: flex; flex-direction: column; gap: 0; }
+  .kca-faq-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--kca-hairline);
+  }
+  .kca-faq-item:last-child { border-bottom: none; }
+  .kca-faq-q {
+    font-family: var(--kca-font-display); font-style: italic; font-weight: 600;
+    font-size: clamp(19px, 2vw, 22px); line-height: 1.35;
+    color: var(--kca-green-darker);
+    margin: 0 0 10px;
+  }
+  .kca-faq-q::before { content: "Q. "; color: var(--kca-terracotta); font-style: normal; }
+  .kca-faq-a {
+    font-family: var(--kca-font-body); font-size: 16px; line-height: 1.75;
+    color: var(--kca-dark-soft); margin: 0; max-width: 66ch;
+  }
+
+  /* =========================================================================
+     Closing CTA — echoes the main site's kca-cta band
+     ========================================================================= */
+  .kca-cta {
+    background:
+      radial-gradient(120% 80% at 80% 0%, rgba(247,219,167,0.24) 0%, rgba(247,219,167,0) 55%),
+      linear-gradient(180deg, var(--kca-terracotta) 0%, var(--kca-terracotta-deep) 100%);
+    padding: clamp(72px, 9vw, 112px) 0;
+    color: var(--kca-cream);
+    position: relative; overflow: hidden;
+  }
+  .kca-cta::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: var(--kca-gold); opacity: 0.7;
+  }
+  .kca-cta::after {
+    content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+    background: var(--kca-terracotta-deep);
+  }
+  .kca-cta__inner { max-width: 720px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); text-align: center; position: relative; }
+  .kca-cta .kca-eyebrow { color: var(--kca-gold); justify-content: center; }
+  .kca-cta .kca-eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; opacity: 0.65; }
+  .kca-cta__lede {
+    font-family: var(--kca-font-body); font-size: 18px; line-height: 1.65;
+    color: rgba(250,245,234,0.94); margin: -6px auto 32px; max-width: 58ch;
+  }
+  .kca-cta__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+  .kca-cta__meta {
+    margin-top: 40px; padding-top: 28px;
+    border-top: 1px solid rgba(247,219,167,0.3);
+    display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+    font-family: var(--kca-font-body); font-weight: 600; font-size: 12px; letter-spacing: 0.08em;
+    color: rgba(250,245,234,0.94);
+  }
+  .kca-cta__meta a { text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px; }
+  .kca-cta__meta span { display: inline-flex; align-items: center; gap: 8px; }
+  .kca-cta__back { margin-top: 28px; }
+  .kca-cta__back a {
+    font-family: var(--kca-font-display); font-style: italic; font-weight: 600;
+    font-size: 15px; color: var(--kca-cream); text-decoration: none;
+    border-bottom: 1px solid rgba(250,245,234,0.5);
+  }
+  .kca-cta__back a:hover { border-color: var(--kca-cream); }
+
+  /* =========================================================================
+     Footer — echoes the main site
+     ========================================================================= */
+  .kca-footer {
+    background: var(--kca-green-darker);
+    color: var(--kca-cream); padding: 0;
+    border-top: 4px solid var(--kca-terracotta);
+  }
+  .kca-footer__mahalo { text-align: center; padding: 48px 0 28px; border-bottom: 1px solid var(--kca-hairline-dark); }
+  .kca-footer__mahalo-sig { font-family: var(--kca-font-hand); font-size: 48px; line-height: 1; color: var(--kca-gold); margin: 0; }
+  .kca-footer__mahalo-sub {
+    font-family: var(--kca-font-display); font-style: italic;
+    font-size: 16px; color: rgba(250,245,234,0.74); margin: 10px 0 0;
+  }
+  .kca-footer__inner {
+    max-width: 1240px; margin: 0 auto;
+    padding: 48px clamp(20px, 4vw, 56px) 32px;
+    display: grid; grid-template-columns: 1.2fr 2fr; gap: 48px;
+  }
+  .kca-footer__name {
+    font-family: 'Cinzel', Georgia, serif; font-weight: 600;
+    font-size: 22px; letter-spacing: 0.04em; color: var(--kca-gold); line-height: 1.05;
+  }
+  .kca-footer__name .wk { font-family: 'Cinzel Decorative', Georgia, serif; }
+  .kca-footer__sub {
+    font-family: var(--kca-font-body); font-weight: 600;
+    font-size: 10.5px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: rgba(250,245,234,0.72); margin-top: 4px;
+  }
+  .kca-footer__slogan {
+    font-family: var(--kca-font-display); font-style: italic;
+    color: var(--kca-cream); font-size: 16px; margin-top: 12px; max-width: 32ch;
+  }
+  .kca-footer__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .kca-footer__cols h4 {
+    font-family: var(--kca-font-body); font-weight: 700;
+    font-size: 10.5px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--kca-gold); margin: 0 0 16px;
+  }
+  .kca-footer__cols a, .kca-footer__cols span {
+    font-family: var(--kca-font-body); font-size: 14px; display: block;
+    color: rgba(250,245,234,0.78); text-decoration: none; border: none; margin-bottom: 8px;
+  }
+  .kca-footer__cols a:hover { color: var(--kca-gold); }
+  .kca-footer__base {
+    border-top: 1px solid var(--kca-hairline-dark);
+    padding: 20px clamp(20px, 4vw, 56px);
+    max-width: 1240px; margin: 0 auto;
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    font-family: var(--kca-font-body); font-size: 12px; color: rgba(250,245,234,0.6);
+  }
+
+  @media (max-width: 760px) {
+    .kca-footer__inner { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; padding: 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="kca-nav">
+  <div class="kca-utility">
+    <div class="kca-utility__inner">
+      <div class="kca-utility__left">
+        <a class="kca-utility__phone" href="tel:+18084449420">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2H7.18a2 2 0 0 1 2 1.72 12.3 12.3 0 0 0 .68 2.81 2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.3 12.3 0 0 0 2.81.68 2 2 0 0 1 1.72 2z"/></svg>
+          <span class="kca-utility__phone-num">(808) 444-9420</span>
+          <span class="kca-utility__phone-lbl">· Speak with your adjuster</span>
+        </a>
+        <span class="kca-utility__sep" aria-hidden="true">·</span>
+        <span class="kca-utility__lic">HI License #19246735</span>
+        <span class="kca-utility__sep" aria-hidden="true">·</span>
+        <span class="kca-utility__badge">No recovery, no fee.</span>
+      </div>
+    </div>
+  </div>
+  <div class="kca-nav__inner">
+    <a href="index.html" class="kca-nav__brand" aria-label="Kuleana Claim Solutions — homepage">
+      <span class="kca-nav__wordmark">
+        <span class="kca-nav__wordmark-1"><span class="wk">K</span>uleana</span>
+        <span class="kca-nav__wordmark-2">Claim Solutions</span>
+      </span>
+    </a>
+    <a class="kca-nav__back" href="index.html">&larr; Back to homepage</a>
+    <div class="kca-nav__cta">
+      <a class="kca-nav__phone" href="tel:+18084449420">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2H7.18a2 2 0 0 1 2 1.72 12.3 12.3 0 0 0 .68 2.81 2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.3 12.3 0 0 0 2.81.68 2 2 0 0 1 1.72 2z"/></svg>
+        <span>(808) 444-9420</span>
+      </a>
+    </div>
+  </div>
+  <div class="kca-nav__horizon" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <section class="kca-faq-hero">
+    <div class="kca-faq-hero__inner">
+      <span class="kca-eyebrow kca-eyebrow--center">Frequently Asked Questions</span>
+      <h1 class="kca-anchor">Every question, <em>answered honestly.</em></h1>
+      <p class="kca-body kca-body--muted kca-faq-hero__lede">Public adjusting comes with a lot of fine print and even more uncertainty. Here's the straight, plain-English answer to what we hear most — no sales pitch, just what to actually expect.</p>
+    </div>
+    <nav class="kca-faq-jump" aria-label="Jump to FAQ group">
+      <a href="#basics">The Basics</a>
+      <a href="#how-this-works">How This Works</a>
+      <a href="#cost-payment">Cost &amp; Payment</a>
+      <a href="#your-claim">Your Claim</a>
+    </nav>
+  </section>
+
+  <section class="kca-faq-section">
+    <div class="kca-faq-groups">
+
+      <div class="kca-faq-group" id="basics">
+        <div class="kca-faq-group__head">
+          <span class="kca-faq-group__num">01</span>
+          <h2 class="kca-faq-group__title">The Basics</h2>
+        </div>
+        <div class="kca-faq-list">
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">What does my policy actually cover?</h3>
+            <p class="kca-faq-a">More than your carrier may let on. We read your declarations page, exclusions, and endorsements together — and translate the legalese into plain English so you know what you're owed.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">My claim was denied. Is it really over?</h3>
+            <p class="kca-faq-a">Almost never. A denial is a position, not a verdict. With proper documentation — photos, moisture readings, a written narrative — most denied claims can be re-opened and challenged, through negotiation or appraisal, or by referring you to coverage counsel if it comes to litigation.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">Will hiring you slow my settlement down?</h3>
+            <p class="kca-faq-a">Usually the opposite. A complete, well-documented file moves faster through a carrier's queue than one they can quietly under-pay. We do the work that gets your claim taken seriously.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">What does this cost me up front?</h3>
+            <p class="kca-faq-a">Nothing. The initial policy review is free. If there's no recovery, there's no fee.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kca-faq-group" id="how-this-works">
+        <div class="kca-faq-group__head">
+          <span class="kca-faq-group__num">02</span>
+          <h2 class="kca-faq-group__title">How This Works</h2>
+        </div>
+        <div class="kca-faq-list">
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">What's the difference between you and the adjuster the insurance company sends?</h3>
+            <p class="kca-faq-a">The carrier's adjuster works for the carrier — their job is to manage claim costs on the company's behalf. We're hired by you, and we represent only your interests. Two different adjusters, two different clients.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">If the carrier disagrees with your estimate, what happens?</h3>
+            <p class="kca-faq-a">Most disagreements resolve once we present a fully documented, code-compliant estimate. If the carrier still won't move, we look at your policy's appraisal clause or bring in coverage counsel for next steps. You won't be left with only a take-it-or-leave-it offer.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">How long does this usually take?</h3>
+            <p class="kca-faq-a">It depends on claim size and how responsive the carrier is — a straightforward reopened claim can resolve in weeks; a heavily disputed one can take months. We'll give you a realistic timeline once we've reviewed your policy and loss, and keep you updated at every step.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">Does hiring a public adjuster violate my policy?</h3>
+            <p class="kca-faq-a">No. Hawaii law recognizes a policyholder's right to hire a licensed public adjuster, and carriers are not permitted to penalize you for exercising that right. We're licensed and regulated by the same Hawaii DCCA that oversees your carrier's adjusters.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kca-faq-group" id="cost-payment">
+        <div class="kca-faq-group__head">
+          <span class="kca-faq-group__num">03</span>
+          <h2 class="kca-faq-group__title">Cost &amp; Payment</h2>
+        </div>
+        <div class="kca-faq-list">
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">How do you actually get paid?</h3>
+            <p class="kca-faq-a">We work on contingency — a percentage of what we actually recover for you, agreed with you in writing before you sign anything. You'll see the exact number up front. There's no flat fee, and no cost to you if we don't recover anything.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">Do you get involved with mortgage company or escrow checks?</h3>
+            <p class="kca-faq-a">Yes. Insurance checks on larger claims are often issued jointly to you and your mortgage company, and getting those funds released for repairs can be its own headache. We handle that coordination as part of your file.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kca-faq-group" id="your-claim">
+        <div class="kca-faq-group__head">
+          <span class="kca-faq-group__num">04</span>
+          <h2 class="kca-faq-group__title">Your Claim</h2>
+        </div>
+        <div class="kca-faq-list">
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">My claim was already "settled." Can you still help?</h3>
+            <p class="kca-faq-a">Sometimes. If you accepted a payment that didn't reflect the real scope of damage, or new damage has surfaced, we can review whether it's still within your policy's timeframe to reopen or supplement the claim. Send us the paperwork and we'll tell you honestly whether there's a path forward.</p>
+          </div>
+          <div class="kca-faq-item">
+            <h3 class="kca-faq-q">What should I gather before we talk?</h3>
+            <p class="kca-faq-a">Your policy declarations page, any correspondence from the carrier, photos or video of the damage, and receipts for emergency repairs like tarping or water extraction. Don't have all of it — we'll help you track down what's missing.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="kca-cta" id="contact">
+    <div class="kca-cta__inner">
+      <span class="kca-eyebrow">Still Have a Question?</span>
+      <h2 class="kca-anchor kca-anchor--light" style="font-size: clamp(28px, 3.4vw, 42px);">We're happy to talk it through.</h2>
+      <p class="kca-cta__lede">If you didn't find your answer here, a real conversation is one call away — free, no pressure, and no obligation.</p>
+      <div class="kca-cta__actions">
+        <a class="kca-btn kca-btn--cream kca-btn--lg" href="tel:+18084449420">Call (808) 444-9420</a>
+        <a class="kca-btn kca-btn--ghost-light kca-btn--lg" href="index.html#contact">Schedule a Free Inspection</a>
+      </div>
+      <div class="kca-cta__meta">
+        <a href="mailto:contact@kuleanaclaims.com">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          contact@kuleanaclaims.com
+        </a>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          1001 Bishop St, Honolulu, HI 96813
+        </span>
+      </div>
+      <p class="kca-cta__back"><a href="index.html">&larr; Back to homepage</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="kca-footer">
+  <div class="kca-footer__mahalo">
+    <p class="kca-footer__mahalo-sig">Mahalo nui</p>
+    <p class="kca-footer__mahalo-sub">For trusting us with the place you call home.</p>
+  </div>
+  <div class="kca-footer__inner">
+    <div class="kca-footer__brand">
+      <div>
+        <div class="kca-footer__name"><span class="wk">K</span>uleana</div>
+        <div class="kca-footer__sub">Claim Solutions</div>
+        <div class="kca-footer__slogan">&ldquo;Rooted in honor, committed to your recovery.&rdquo;</div>
+      </div>
+    </div>
+    <div class="kca-footer__cols">
+      <div>
+        <h4>Firm</h4>
+        <a href="index.html#kuleana">Our Approach</a>
+        <a href="index.html#process">Our Process</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+18084449420">(808) 444&#8209;9420</a>
+        <a href="mailto:contact@kuleanaclaims.com">contact@kuleanaclaims.com</a>
+        <span>1001 Bishop St, Honolulu, HI 96813</span>
+      </div>
+    </div>
+  </div>
+  <div class="kca-footer__base">
+    <span>&copy; 2026 Kuleana Claim Solutions &middot; Licensed Public Adjuster, State of Hawai&#699;i (DCCA)</span>
+  </div>
+</footer>
+
+</body>
+</html>
