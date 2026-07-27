@@ -70,10 +70,11 @@ referral-disclosure obligation is triggered by this content.
 
 1. Always include the license number line (it is baked into every template).
 2. Never promise outcomes, amounts, or timeframes; describe process.
-3. Keep the "Illustrative recreation" stamp on any staged or AI-generated
-   damage imagery; never present it as a real client claim. If a real claim
-   photo is used, get the client's written permission first and never show
-   claim numbers, addresses, or policy details.
+3. Keep the "(Imagery/Footage is an illustrative recreation.)" caption line
+   on any staged or AI-generated damage imagery; never present it as a real
+   client claim. If a real claim photo is used, get the client's written
+   permission first and never show claim numbers, addresses, or policy
+   details.
 4. Don't quote fee percentages in ads — those belong in the written contract.
 5. In-person and loss-site solicitation is regulated more tightly than
    advertising; this set is feed content, not door-to-door material.
