@@ -158,3 +158,74 @@ on your roof — free. (Footage is an illustrative recreation.)
 
 Raw unbranded clips are in `video/raw-*.mp4`; the overlay and end-card frames
 are in `video/frames/` for future re-edits.
+
+---
+
+## Peril-gap batch (posts 15–20 + 2 reels)
+
+New visuals filling the peril gaps identified in `content-ideas.md`. All
+imagery is AI-recreated and stamped "Illustrative recreation" — keep the
+caption disclosure line on every one.
+
+### 15 · Kitchen fire — `posts/15-photo-fire.png`
+
+**Caption:**
+Fire is fast. Smoke is thorough. The flames stopped at the kitchen — the smoke
+didn't. A fire claim isn't just charred cabinets; it's residue, odor, wiring,
+and contents in rooms the fire never touched. We document all of it.
+(Imagery is an illustrative recreation, not a client property.)
+
+### 16 · Burst supply line — `posts/16-photo-pipe.png`
+
+**Caption:**
+One cracked hose. Five rooms of damage. Sudden water discharge is one of the
+most common covered claims in Hawaiʻi — and one of the most underpaid. Shut
+the water off, photograph everything wet, and call before the carrier's
+adjuster visits. (Imagery is an illustrative recreation.)
+
+### 17 · Lanai / hurricane deductible — `posts/17-photo-lanai.png`
+
+**Caption:**
+Wind or hurricane? Your deductible knows the difference. Many Hawaiʻi
+policies carry a separate hurricane deductible that only applies once winds
+reach hurricane strength — and which one applies can change your recovery by
+thousands. We read the policy before the carrier decides for you.
+(Imagery is an illustrative recreation.)
+
+### 18 · Smoke damage — `posts/18-photo-smoke.png`
+
+**Caption:**
+The fire was next door. The damage is yours. Soot film, odor, corrosive
+residue — smoke claims are real claims, even when flames never touched your
+home. Don't let it be waved off as "just cleaning."
+(Imagery is an illustrative recreation.)
+
+### 19 · Solar panels — `posts/19-photo-solar.png`
+
+**Caption:**
+Your roof isn't the only thing up there. Cracked cells, lifted racking,
+damaged wiring — Hawaiʻi homes run on solar, and storm damage to your system
+belongs in your claim, including what it costs you in lost production.
+(Imagery is an illustrative recreation.)
+
+### 20 · Storm water intrusion — `posts/20-photo-rain.png`
+
+**Caption:**
+If it's coming in, start recording. Video during the storm shows where the
+water entered, how fast, and what it touched — evidence the carrier can't
+argue with later. Stay safe, film what you can, then call us.
+(Imagery is an illustrative recreation.)
+
+### Reel · `video/kuleana-fire-damage-reel.mp4`
+
+**Caption:**
+The flames stop. The claim begins. 🔥 Fire, smoke, and everything the smoke
+touched — free consultation, island-wide. (Footage is an illustrative
+recreation.)
+
+### Reel · `video/kuleana-pipe-burst-reel.mp4`
+
+**Caption:**
+Shut the water. Save the evidence. 💧 A burst supply line can reach five rooms
+before you find the valve — document everything before cleanup. Free
+inspection. (Footage is an illustrative recreation.)
