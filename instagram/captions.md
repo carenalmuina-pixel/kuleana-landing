@@ -246,3 +246,15 @@ That hailstorm wasn't just loud. Hail doesn't just dent gutters — it bruises
 shingles in ways you can't see from the ground, and every soft spot is a
 future leak. If hail hit your neighborhood, get a free inspection before the
 next rain finds the damage first.
+
+### 22 · Inside a free inspection — `posts/22-photo-inspection.png`
+
+Uses Caren's real inspection photo (uploaded from her iPad — authentic, no
+AI disclosure needed). Strongest trust post in the set; good pin candidate
+alongside 01.
+
+**Caption:**
+This is what a free inspection actually looks like. We check the places leaks
+start — supply lines, traps, valves, the spots carriers skip — and you walk
+every step with us. The documentation is yours to keep, whether or not you
+ever file a claim. Book yours: (808) 444-9420.
