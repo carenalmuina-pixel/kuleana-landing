@@ -17,10 +17,16 @@ Source files: `kuleana-instagram-posts.html` (self-contained — fonts and logo
 embedded; open in a browser to view or re-screenshot), rendered tiles in
 `posts/`, reels in `video/` (raw clips + brand frames included for re-edits).
 
-**Imagery disclosure:** the damage photos and video clips are AI-generated
-illustrative recreations, stamped "Illustrative recreation" on the artwork.
-Keep that stamp. If you ever swap in a real claim photo, get written client
-permission and crop out any claim numbers or addresses.
+**Imagery disclosure:** on-image "Illustrative recreation" stamps have been
+removed at Caren's request. Posts 11 (water damage) and 21 (hail) now use
+photos from Caren's own library; all other damage photos and all reel footage
+remain AI-generated, so KEEP the "(Imagery/Footage is an illustrative
+recreation.)" line in those captions — that caption disclosure is what keeps
+the ads honest under the misrepresentation rules. Before publishing the
+library photos, confirm you hold rights to them (they appear to be saved
+marketing/stock images, not original claim photos). If you ever post a real
+client claim photo, get written client permission and crop out claim numbers
+and addresses.
 
 Suggested caption signature for every post:
 
@@ -105,13 +111,13 @@ the first answer as the final one.
 
 ## 11 · Water damage photo post — `posts/11-photo-ceiling.png`
 
-Kuleana-branded recreation of the classic ceiling-bubble damage photo post.
+Now uses the water-damage photo from Caren's library (confirm image rights
+before publishing).
 
 **Caption:**
 This ceiling was whispering long before it dripped. Bubbling, staining,
 sagging — by the time water shows itself, it's been working behind the surface
 for weeks. We photograph, measure, and write the narrative your claim needs.
-(Imagery is an illustrative recreation, not a client property.)
 
 ## 12 · Wind damage photo post — `posts/12-photo-roof.png`
 
@@ -229,3 +235,14 @@ recreation.)
 Shut the water. Save the evidence. 💧 A burst supply line can reach five rooms
 before you find the valve — document everything before cleanup. Free
 inspection. (Footage is an illustrative recreation.)
+
+### 21 · Hail photo post — `posts/21-photo-hail.png`
+
+Recreates the original hailstorm post using the hail photo from Caren's
+library (confirm image rights before publishing).
+
+**Caption:**
+That hailstorm wasn't just loud. Hail doesn't just dent gutters — it bruises
+shingles in ways you can't see from the ground, and every soft spot is a
+future leak. If hail hit your neighborhood, get a free inspection before the
+next rain finds the damage first.

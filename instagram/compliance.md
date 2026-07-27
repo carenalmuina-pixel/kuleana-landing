@@ -28,10 +28,12 @@ article 9 (misrepresentation as grounds for license action).**
 - The denied-claims tile says "**Many** denied claims can be re-opened and
   challenged" — deliberately not "most" or "all," and framed as possibility,
   not guarantee.
-- All recreated damage imagery (photos and video) is stamped
-  **"Illustrative recreation"** on the artwork itself, so no image can be
-  mistaken for an actual client property or an actual claim file. The caption
-  guide repeats the disclosure in text.
+- Recreated damage imagery is disclosed as an **illustrative recreation in
+  the caption of every post that uses it** (on-image stamps were removed at
+  the owner's request; the caption disclosure is the compliance control —
+  do not drop it). Posts 11 and 21 use photos from the owner's own library
+  rather than AI imagery; confirm licensing for those before wide use. No
+  post presents any image as an actual client property or claim file.
 
 **3. Fee representations — Hawaii's adopted NAIC-model fee provisions
 (compensation terms must be stated in the written contract; if the carrier
