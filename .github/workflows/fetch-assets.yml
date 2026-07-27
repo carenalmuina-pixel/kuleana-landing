@@ -1,16 +1,17 @@
 name: Fetch external assets
 
 # Utility workflow: downloads externally generated media (e.g. AI-rendered
-# brand assets) into the repository, since some development environments
-# cannot reach the media CDN directly.
+# brand assets) listed in .assets-manifest.json into the repository, since
+# some development environments cannot reach the media CDN directly.
+# Runs only when the manifest changes on this feature branch. Pushes made
+# by the workflow itself (via GITHUB_TOKEN) do not re-trigger it.
 
 on:
-  workflow_dispatch:
-    inputs:
-      manifest:
-        description: 'JSON array of {"url": "...", "path": "..."} objects'
-        required: true
-        type: string
+  push:
+    branches:
+      - claude/kuleana-instagram-redesign-x267vm
+    paths:
+      - .assets-manifest.json
 
 permissions:
   contents: write
@@ -22,10 +23,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Download assets
-        env:
-          MANIFEST: ${{ inputs.manifest }}
         run: |
-          echo "$MANIFEST" | jq -c '.[]' | while read -r item; do
+          jq -c '.[]' .assets-manifest.json | while read -r item; do
             url=$(echo "$item" | jq -r .url)
             path=$(echo "$item" | jq -r .path)
             case "$path" in
