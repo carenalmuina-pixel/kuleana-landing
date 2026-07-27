@@ -120,10 +120,10 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
   color: #2A2620;
   overflow: hidden;
   font-family: 'Lora', Georgia, serif;
+  display: flex; flex-direction: column;
 }
 .post--green  { background: #3F5A41; color: #FAF5EA; }
 .post--terra  { background: #B8501F; color: #FAF5EA; }
-.post--creamdeep { background: #F2EAD6; }
 
 /* logo as tintable mask */
 .kmark {
@@ -134,16 +134,32 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
   -webkit-mask-position: center; mask-position: center;
 }
 
-/* watermark mark, oversized, anchored bottom-left like the site's kuleana section */
-.watermark { position: absolute; width: 720px; height: 720px; left: -160px; bottom: -160px; opacity: 0.09; }
-
 /* top rule of gold like site section divider */
-.goldline { position: absolute; top: 0; left: 0; right: 0; height: 6px;
+.goldline { position: absolute; top: 0; left: 0; right: 0; height: 6px; z-index: 3;
   background: linear-gradient(90deg, #B8501F 0%, #F7DBA7 50%, #B8501F 100%); }
 
-.inner { position: absolute; inset: 0; padding: 96px 104px 88px; display: flex; flex-direction: column; }
+/* ================= BRAND HEADER (every post) ================= */
+.head {
+  flex: none;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 44px 104px 30px;
+  border-bottom: 1px solid #D9CFB6;
+  margin: 0 0 0 0;
+}
+.post--green .head, .post--terra .head { border-bottom-color: rgba(250,245,234,0.24); }
+.brandlock { display: flex; align-items: center; gap: 20px; }
+.brandlock .kmark { width: 58px; height: 58px; background-color: #3F5A41; flex: none; }
+.post--green .brandlock .kmark, .post--terra .brandlock .kmark { background-color: #F7DBA7; }
+.wordmark { font-family: 'Cinzel', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: 0.2em; color: #2A2620; line-height: 1; }
+.wordmark span { display: block; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 14px; letter-spacing: 0.4em; color: #B8501F; margin-top: 7px; }
+.post--green .wordmark, .post--terra .wordmark { color: #FAF5EA; }
+.post--green .wordmark span, .post--terra .wordmark span { color: #F7DBA7; }
+.head-right { text-align: right; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 19px; letter-spacing: 0.26em; text-transform: uppercase; color: #8A8175; }
+.post--green .head-right, .post--terra .head-right { color: rgba(250,245,234,0.65); }
 
-/* ---------------- type roles ---------------- */
+/* ================= CONTENT ================= */
+.inner { flex: 1; display: flex; flex-direction: column; padding: 54px 104px 0; min-height: 0; }
+
 .eyebrow {
   font-family: 'Lora', Georgia, serif; font-weight: 600;
   font-size: 22px; letter-spacing: 0.32em; text-transform: uppercase;
@@ -154,120 +170,137 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
 
 .display {
   font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500;
-  font-size: 104px; line-height: 1.08; letter-spacing: -0.005em;
+  font-size: 96px; line-height: 1.08; letter-spacing: -0.005em;
   color: #3F5A41; text-wrap: balance;
 }
 .display em { font-style: italic; font-weight: 500; color: #B8501F; }
-.post--green .display { color: #FAF5EA; }
-.post--green .display em { color: #F7DBA7; }
-.post--terra .display { color: #FAF5EA; }
-.post--terra .display em { color: #F7DBA7; }
+.post--green .display, .post--terra .display { color: #FAF5EA; }
+.post--green .display em, .post--terra .display em { color: #F7DBA7; }
 
 .hand { font-family: 'Allura', cursive; font-weight: 400; color: #F7DBA7; }
 
-.body { font-family: 'Lora', Georgia, serif; font-size: 31px; line-height: 1.6; color: #4F4A41; }
+.body { font-family: 'Lora', Georgia, serif; font-size: 30px; line-height: 1.58; color: #4F4A41; }
 .post--green .body, .post--terra .body { color: rgba(250,245,234,0.88); }
 
 /* list rows */
 .rows { display: flex; flex-direction: column; }
-.row { display: flex; gap: 34px; align-items: baseline; padding: 34px 0; border-top: 1px solid #D9CFB6; }
+.row { display: flex; gap: 34px; align-items: baseline; padding: 28px 0; border-top: 1px solid #D9CFB6; }
 .post--green .row { border-top-color: rgba(250,245,234,0.22); }
 .row-num {
   font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500;
-  font-size: 44px; color: #B8501F; min-width: 64px;
+  font-size: 42px; color: #B8501F; min-width: 64px;
 }
 .post--green .row-num { color: #F7DBA7; }
-.row h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.15; color: #2A2620; margin-bottom: 8px; }
+.row h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 40px; line-height: 1.15; color: #2A2620; margin-bottom: 7px; }
 .post--green .row h3 { color: #FAF5EA; }
-.row p { font-family: 'Lora', Georgia, serif; font-size: 27px; line-height: 1.5; color: #4F4A41; }
+.row p { font-family: 'Lora', Georgia, serif; font-size: 26px; line-height: 1.48; color: #4F4A41; }
 .post--green .row p { color: rgba(250,245,234,0.82); }
 
 /* CTA band */
 .cta {
   display: inline-flex; align-items: center; gap: 20px;
-  font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 24px;
+  font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 23px;
   letter-spacing: 0.22em; text-transform: uppercase;
-  background: #B8501F; color: #FAF5EA; padding: 26px 44px; border-radius: 2px;
+  background: #B8501F; color: #FAF5EA; padding: 24px 42px; border-radius: 2px;
   align-self: flex-start;
 }
 .post--green .cta { background: #F7DBA7; color: #2E4231; }
 .post--terra .cta { background: #FAF5EA; color: #8A3C16; }
 
-/* footer */
-.foot { margin-top: auto; padding-top: 34px; border-top: 1px solid #D9CFB6; }
+/* ================= FOOTER + COMPLIANCE (every post) ================= */
+.foot { flex: none; margin-top: auto; padding: 30px 104px 40px; border-top: 1px solid #D9CFB6; }
 .post--green .foot, .post--terra .foot { border-top-color: rgba(250,245,234,0.26); }
-.foot-top { display: flex; align-items: center; justify-content: space-between; }
-.brandlock { display: flex; align-items: center; gap: 18px; }
-.brandlock .kmark { width: 52px; height: 52px; background-color: #3F5A41; }
-.post--green .brandlock .kmark { background-color: #F7DBA7; }
-.post--terra .brandlock .kmark { background-color: #F7DBA7; }
-.wordmark { font-family: 'Cinzel', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.18em; color: #2A2620; }
-.wordmark span { display: block; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 13px; letter-spacing: 0.34em; color: #B8501F; margin-top: 5px; }
-.post--green .wordmark, .post--terra .wordmark { color: #FAF5EA; }
-.post--green .wordmark span, .post--terra .wordmark span { color: #F7DBA7; }
-.contact { text-align: right; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 22px; color: #2A2620; }
-.contact span { display: block; font-weight: 400; font-size: 18px; color: #8A8175; margin-top: 6px; letter-spacing: 0.04em; }
-.post--green .contact, .post--terra .contact { color: #FAF5EA; }
-.post--green .contact span, .post--terra .contact span { color: rgba(250,245,234,0.66); }
+.foot-top { display: flex; align-items: baseline; justify-content: space-between; }
+.foot-contact { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 25px; color: #2A2620; }
+.post--green .foot-contact, .post--terra .foot-contact { color: #FAF5EA; }
+.foot-site { font-family: 'Lora', Georgia, serif; font-weight: 400; font-size: 22px; color: #8A8175; letter-spacing: 0.04em; }
+.post--green .foot-site, .post--terra .foot-site { color: rgba(250,245,234,0.7); }
+.lic {
+  margin-top: 16px;
+  font-family: 'Lora', Georgia, serif; font-weight: 400; font-size: 16px; letter-spacing: 0.05em; white-space: nowrap;
+  color: #8A8175;
+}
+.post--green .lic, .post--terra .lic { color: rgba(250,245,234,0.55); }
 
 /* small helpers */
-.defn { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 34px; color: rgba(250,245,234,0.72); letter-spacing: 0.04em; }
-.kicker { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 21px; letter-spacing: 0.28em; text-transform: uppercase; color: #8A8175; }
-.post--green .kicker { color: rgba(250,245,234,0.6); }
+.defn { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 33px; color: rgba(250,245,234,0.72); letter-spacing: 0.04em; }
 
-/* carousel giant numeral */
+/* carousel numerals — sized and placed to never touch other text */
 .bignum {
   font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-style: italic;
-  font-size: 430px; line-height: 0.82; color: #B8501F;
+  font-size: 330px; line-height: 0.78; color: #B8501F; flex: none;
 }
 .slide-index {
   font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500;
-  font-size: 210px; line-height: 1; color: #F7DBA7;
+  font-size: 170px; line-height: 0.9; color: #F7DBA7;
 }
 .swipe { display: inline-flex; align-items: center; gap: 18px;
   font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 23px; letter-spacing: 0.3em; text-transform: uppercase; color: #B8501F; }
 .swipe::after { content: "\2192"; font-size: 34px; letter-spacing: 0; }
+
+/* ================= PHOTO POSTS ================= */
+.photo-frame { flex: none; position: relative; margin: 48px 104px 0; height: 620px; border: 2px solid #B8501F; padding: 14px; background: #FAF5EA; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-tag {
+  position: absolute; right: 30px; bottom: 30px;
+  font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 16px; letter-spacing: 0.18em; text-transform: uppercase;
+  background: rgba(42,38,32,0.82); color: #FAF5EA; padding: 10px 18px;
+}
+.photo-body { flex: 1; display: flex; flex-direction: column; padding: 44px 104px 0; min-height: 0; }
+.photo-body .display { font-size: 66px; margin-top: 22px; }
+.photo-body .body { font-size: 26px; margin-top: 22px; line-height: 1.5; }
 </style>
 </head>
 <body>
 
 <!-- ============================================================
-POST 01 · Brand anchor — replaces generic intro/brand posts
+POST 01 · Brand anchor
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <span class="kmark watermark" style="background-color:#FAF5EA;"></span>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
-    <div class="eyebrow">Honolulu, Hawai&#699;i &middot; Public Adjusting</div>
-    <div style="margin-top: 108px;">
-      <div class="hand" style="font-size: 96px; margin-bottom: 6px;">Aloha,</div>
-      <h1 class="display" style="font-size: 96px;">Rooted in honor,<br/>committed to your <em>recovery.</em></h1>
+    <div class="eyebrow">Public Adjusting, Done With Aloha</div>
+    <div style="margin-top: 64px;">
+      <div class="hand" style="font-size: 92px; margin-bottom: 4px;">Aloha,</div>
+      <h1 class="display" style="font-size: 88px;">Rooted in honor,<br/>committed to your <em>recovery.</em></h1>
     </div>
-    <div style="margin-top: 78px;">
+    <div style="margin-top: 58px;">
       <div class="defn">ku&middot;le&middot;a&middot;na <span style="font-style: normal; opacity: 0.6;">(n.)</span></div>
-      <p class="body" style="margin-top: 14px; max-width: 780px;">Responsibility &mdash; and privilege. Caring for the place that cares for you. When a storm or a leak puts your home at risk, your claim becomes our kuleana.</p>
-    </div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
+      <p class="body" style="margin-top: 12px; max-width: 800px;">Responsibility &mdash; and privilege. Caring for the place that cares for you. When a storm or a leak puts your home at risk, your claim becomes our kuleana.</p>
     </div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 02 · Warning signs — redesign of "small bubble in the ceiling"
+POST 02 · Warning signs
 ============================================================ -->
 <div class="post" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
     <div class="eyebrow">Homeowner Warning Signs</div>
-    <h1 class="display" style="margin-top: 56px; font-size: 92px;">A small bubble in the ceiling is <em>never</em> just a bubble.</h1>
-    <div class="rows" style="margin-top: 64px;">
+    <h1 class="display" style="margin-top: 40px; font-size: 76px;">A small bubble in the ceiling is <em>never</em> just a bubble.</h1>
+    <div class="rows" style="margin-top: 44px;">
       <div class="row">
         <div class="row-num">01</div>
         <div><h3>Bubbling or sagging paint</h3><p>Water is already collecting behind the surface &mdash; long before it drips.</p></div>
@@ -281,65 +314,72 @@ POST 02 · Warning signs — redesign of "small bubble in the ceiling"
         <div><h3>Hairline cracks that keep growing</h3><p>Moisture swells framing and drywall. Small today, structural tomorrow.</p></div>
       </div>
     </div>
-    <div style="margin-top: 56px;"><span class="cta">Free Inspection &middot; No Recovery, No Fee</span></div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
-    </div>
+    <div style="margin-top: 40px;"><span class="cta">Free Inspection &middot; No Recovery, No Fee</span></div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 03 · Two adjusters — redesign of "who's sending yours?"
+POST 03 · Two adjusters
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <span class="kmark watermark" style="background-color:#FAF5EA;"></span>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
     <div class="eyebrow">Know Who&rsquo;s On Your Side</div>
-    <h1 class="display" style="margin-top: 84px; font-size: 100px;">Your carrier sends an adjuster.<br/><em>Who&rsquo;s sending yours?</em></h1>
-    <p class="body" style="margin-top: 64px; max-width: 800px;">The carrier&rsquo;s adjuster works for the carrier &mdash; their job is to manage claim costs. We&rsquo;re licensed public adjusters hired by you, and we represent only your interests.</p>
-    <p class="display" style="font-size: 52px; margin-top: 52px; font-style: italic; color: #F7DBA7;">Two different adjusters,<br/>two different clients.</p>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
-    </div>
+    <h1 class="display" style="margin-top: 58px; font-size: 88px;">Your carrier sends an adjuster.<br/><em>Who&rsquo;s sending yours?</em></h1>
+    <p class="body" style="margin-top: 52px; max-width: 820px;">The carrier&rsquo;s adjuster works for the carrier &mdash; their job is to manage claim costs. We&rsquo;re licensed public adjusters hired by you, and we represent only your interests.</p>
+    <p class="display" style="font-size: 50px; margin-top: 44px; font-style: italic; color: #F7DBA7;">Two different adjusters,<br/>two different clients.</p>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 04 · Carousel cover — redesign of "3 ways carriers fine-print"
+POST 04 · Carousel cover — numeral in its own column, no overlap
 ============================================================ -->
 <div class="post" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
     <div class="eyebrow">Read Before You Renew</div>
-    <div style="display: flex; align-items: flex-start; gap: 44px; margin-top: 92px;">
+    <div style="display: flex; align-items: center; gap: 64px; margin-top: 72px;">
       <div class="bignum">3</div>
-      <h1 class="display" style="font-size: 88px; margin-top: 36px;">ways carriers <em>&ldquo;fine-print&rdquo;</em> their way out of paying you</h1>
+      <h1 class="display" style="font-size: 78px;">ways carriers <em>&ldquo;fine-print&rdquo;</em> their way out of paying you</h1>
     </div>
-    <p class="body" style="margin-top: 96px; max-width: 800px;">You pay your premium every month for peace of mind. Then the claim comes, and suddenly the policy says less than you thought. Here&rsquo;s what to watch for.</p>
-    <div style="margin-top: 64px;"><span class="swipe">Swipe</span></div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
-    </div>
+    <p class="body" style="margin-top: 72px; max-width: 820px;">You pay your premium every month for peace of mind. Then the claim comes, and suddenly the policy says less than you thought. Here&rsquo;s what to watch for.</p>
+    <div style="margin-top: 52px;"><span class="swipe">Swipe</span></div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
@@ -347,21 +387,25 @@ POST 05 · Carousel slide 1
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <div class="inner">
-    <div class="eyebrow">Fine Print &middot; 1 of 3</div>
-    <div class="slide-index" style="margin-top: 88px;">01</div>
-    <h1 class="display" style="font-size: 84px; margin-top: 28px;">The exclusion buried in an <em>endorsement.</em></h1>
-    <p class="body" style="margin-top: 56px; max-width: 810px;">Coverage you thought you had can be quietly removed by a two-page endorsement added at renewal. We read your declarations, exclusions, and endorsements together &mdash; and translate the legalese into plain English.</p>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
     </div>
+    <div class="head-right">Fine Print &middot; 1 of 3</div>
+  </header>
+  <div class="inner">
+    <div class="slide-index" style="margin-top: 40px;">01</div>
+    <h1 class="display" style="font-size: 80px; margin-top: 34px;">The exclusion buried in an <em>endorsement.</em></h1>
+    <p class="body" style="margin-top: 48px; max-width: 820px;">Coverage you thought you had can be quietly removed by a two-page endorsement added at renewal. We read your declarations, exclusions, and endorsements together &mdash; and translate the legalese into plain English.</p>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
@@ -369,21 +413,25 @@ POST 06 · Carousel slide 2
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <div class="inner">
-    <div class="eyebrow">Fine Print &middot; 2 of 3</div>
-    <div class="slide-index" style="margin-top: 88px;">02</div>
-    <h1 class="display" style="font-size: 84px; margin-top: 28px;">Depreciation math that <em>shrinks your check.</em></h1>
-    <p class="body" style="margin-top: 56px; max-width: 810px;">&ldquo;Actual cash value&rdquo; means your roof gets paid like a used car. Carriers apply aggressive depreciation and hope you never claim the recoverable portion. We document, itemize, and pursue every dollar your policy actually owes.</p>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
     </div>
+    <div class="head-right">Fine Print &middot; 2 of 3</div>
+  </header>
+  <div class="inner">
+    <div class="slide-index" style="margin-top: 40px;">02</div>
+    <h1 class="display" style="font-size: 80px; margin-top: 34px;">Depreciation math that <em>shrinks your check.</em></h1>
+    <p class="body" style="margin-top: 48px; max-width: 820px;">&ldquo;Actual cash value&rdquo; means your roof gets paid like a used car. Carriers apply aggressive depreciation and hope you never claim the recoverable portion. We document, itemize, and pursue every dollar your policy actually owes.</p>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
@@ -391,34 +439,45 @@ POST 07 · Carousel slide 3
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <div class="inner">
-    <div class="eyebrow">Fine Print &middot; 3 of 3</div>
-    <div class="slide-index" style="margin-top: 88px;">03</div>
-    <h1 class="display" style="font-size: 84px; margin-top: 28px;">Storm damage, reclassified as <em>&ldquo;wear and tear.&rdquo;</em></h1>
-    <p class="body" style="margin-top: 56px; max-width: 810px;">The fastest way to deny wind or water damage is to call it maintenance. Proper documentation &mdash; photos, moisture readings, a written narrative &mdash; is how that position gets challenged. And it can be.</p>
-    <p class="display" style="font-size: 50px; font-style: italic; color: #F7DBA7; margin-top: 48px;">A denial is a position, not a verdict.</p>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
     </div>
+    <div class="head-right">Fine Print &middot; 3 of 3</div>
+  </header>
+  <div class="inner">
+    <div class="slide-index" style="margin-top: 40px;">03</div>
+    <h1 class="display" style="font-size: 80px; margin-top: 34px;">Storm damage, reclassified as <em>&ldquo;wear and tear.&rdquo;</em></h1>
+    <p class="body" style="margin-top: 48px; max-width: 820px;">The fastest way to deny wind or water damage is to call it maintenance. Proper documentation &mdash; photos, moisture readings, a written narrative &mdash; is how that position gets challenged. And it can be.</p>
+    <p class="display" style="font-size: 48px; font-style: italic; color: #F7DBA7; margin-top: 40px;">A denial is a position, not a verdict.</p>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 08 · Roof checklist — redesign of "Stop scrolling and look up"
+POST 08 · Roof checklist
 ============================================================ -->
 <div class="post" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
     <div class="eyebrow">After Every Storm</div>
-    <h1 class="display" style="margin-top: 56px; font-size: 96px;">Stop scrolling. <em>Look up.</em></h1>
-    <p class="body" style="margin-top: 40px; max-width: 820px;">You see shingles. A trained eye sees the evidence your roof has been compromised:</p>
-    <div class="rows" style="margin-top: 44px;">
+    <h1 class="display" style="margin-top: 38px; font-size: 82px;">Stop scrolling. <em>Look up.</em></h1>
+    <p class="body" style="margin-top: 26px; max-width: 830px; font-size: 28px;">You see shingles. A trained eye sees the evidence your roof has been compromised:</p>
+    <div class="rows" style="margin-top: 30px;">
       <div class="row">
         <div class="row-num">01</div>
         <div><h3>Granule loss</h3><p>Bare patches that age your roof years in a single storm.</p></div>
@@ -432,30 +491,34 @@ POST 08 · Roof checklist — redesign of "Stop scrolling and look up"
         <div><h3>Impact bruising</h3><p>Soft spots you can&rsquo;t see from the ground &mdash; but we can.</p></div>
       </div>
     </div>
-    <div style="margin-top: 52px;"><span class="cta">Free Roof Inspection &amp; Policy Review</span></div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
-    </div>
+    <div style="margin-top: 38px;"><span class="cta">Free Roof Inspection &amp; Policy Review</span></div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 09 · Baseline before the storm — redesign of "don't wait for the storm"
+POST 09 · Storm baseline
 ============================================================ -->
 <div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
-  <span class="kmark watermark" style="background-color:#FAF5EA;"></span>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Hurricane Season</div>
+  </header>
   <div class="inner">
-    <div class="eyebrow">Hurricane Season &middot; Hawai&#699;i</div>
-    <h1 class="display" style="margin-top: 72px; font-size: 92px;">Prove what your home looked like <em>before</em> the storm.</h1>
-    <p class="body" style="margin-top: 52px; max-width: 810px;">When you file a claim, the carrier questions everything. A documented baseline is proof they can&rsquo;t argue with:</p>
-    <div class="rows" style="margin-top: 36px;">
+    <div class="eyebrow">Before the Next Storm</div>
+    <h1 class="display" style="margin-top: 44px; font-size: 78px;">Prove what your home looked like <em>before</em> the storm.</h1>
+    <p class="body" style="margin-top: 40px; max-width: 830px; font-size: 28px;">When you file a claim, the carrier questions everything. A documented baseline is proof they can&rsquo;t argue with:</p>
+    <div class="rows" style="margin-top: 26px;">
       <div class="row">
         <div class="row-num">&#10003;</div>
         <div><h3>Photos of every room &mdash; and the roof</h3></div>
@@ -469,41 +532,164 @@ POST 09 · Baseline before the storm — redesign of "don't wait for the storm"
         <div><h3>Your declarations page, somewhere safe</h3></div>
       </div>
     </div>
-    <div style="margin-top: 52px;"><span class="cta">Free Baseline Inspection</span></div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
-    </div>
+    <div style="margin-top: 40px;"><span class="cta">Free Baseline Inspection</span></div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 <!-- ============================================================
-POST 10 · Quote tile — grid accent
+POST 10 · Denial quote
 ============================================================ -->
 <div class="post post--terra" data-canvas-width="1080" data-canvas-height="1350">
-  <span class="kmark watermark" style="background-color:#FAF5EA; left: auto; right: -160px; bottom: -180px;"></span>
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Honolulu &middot; Hawai&#699;i</div>
+  </header>
   <div class="inner">
     <div class="eyebrow">If Your Claim Was Denied</div>
-    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
-      <div style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 280px; line-height: 0.55; color: #F7DBA7;">&ldquo;</div>
-      <h1 class="display" style="font-size: 118px; margin-top: 8px;">A denial is a <em>position,</em><br/>not a <em>verdict.</em></h1>
-      <p class="body" style="margin-top: 56px; max-width: 780px;">Most denied claims can be re-opened and challenged with proper documentation. Don&rsquo;t accept the first answer as the final one.</p>
-    </div>
-    <div class="foot">
-      <div class="foot-top">
-        <div class="brandlock">
-          <span class="kmark"></span>
-          <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
-        </div>
-        <div class="contact">(808) 444-9420<span>kuleanaclaims.com</span></div>
-      </div>
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 40px;">
+      <div style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 240px; line-height: 0.55; color: #F7DBA7;">&ldquo;</div>
+      <h1 class="display" style="font-size: 106px; margin-top: 6px;">A denial is a <em>position,</em><br/>not a <em>verdict.</em></h1>
+      <p class="body" style="margin-top: 48px; max-width: 800px;">Many denied claims can be re-opened and challenged with proper documentation. Don&rsquo;t accept the first answer as the final one.</p>
     </div>
   </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 11 · Photo post — ceiling water damage
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Water Damage</div>
+  </header>
+  <div class="photo-frame">
+    <img src="img/damage-ceiling.png" alt="Water-damaged ceiling with paint bubble and staining" width="948" height="588" />
+    <span class="photo-tag">Illustrative recreation</span>
+  </div>
+  <div class="photo-body">
+    <div class="eyebrow">What We Document</div>
+    <h1 class="display">This ceiling was <em>whispering</em> long before it dripped.</h1>
+    <p class="body">Bubbling, staining, sagging &mdash; we photograph, measure, and write the narrative your claim needs. Free inspection.</p>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 12 · Photo post — roof wind damage
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Wind Damage</div>
+  </header>
+  <div class="photo-frame">
+    <img src="img/damage-roof.png" alt="Wind-damaged asphalt shingle roof with creased and lifted shingles" width="948" height="588" />
+    <span class="photo-tag">Illustrative recreation</span>
+  </div>
+  <div class="photo-body">
+    <div class="eyebrow">After Every Storm</div>
+    <h1 class="display">Wind damage rarely <em>announces</em> itself.</h1>
+    <p class="body">Creased tabs and granule loss let the next rain straight in. A trained inspection catches it while it&rsquo;s still a claim &mdash; not a catastrophe.</p>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 13 · Photo post — hidden mold
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Hidden Damage</div>
+  </header>
+  <div class="photo-frame">
+    <img src="img/damage-mold.png" alt="Opened kitchen wall revealing mold growth on studs" width="948" height="588" />
+    <span class="photo-tag">Illustrative recreation</span>
+  </div>
+  <div class="photo-body">
+    <div class="eyebrow">Behind the Wall</div>
+    <h1 class="display">What you can&rsquo;t see can <em>still</em> cost you.</h1>
+    <p class="body">A supply-line leak doesn&rsquo;t stay in one room. Musty smells, discoloration, bubbling paint &mdash; document it before it spreads.</p>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 14 · Photo post — after the storm
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">After the Storm</div>
+  </header>
+  <div class="photo-frame">
+    <img src="img/damage-exterior.png" alt="Hawaii home exterior with storm debris and damaged gutter" width="948" height="588" />
+    <span class="photo-tag">Illustrative recreation</span>
+  </div>
+  <div class="photo-body">
+    <div class="eyebrow">First 48 Hours</div>
+    <h1 class="display">Before you clean up, <em>document</em> everything.</h1>
+    <p class="body">Photograph the debris, the damage, and every temporary repair receipt. Your future claim is built in the first 48 hours.</p>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
 </div>
 
 </body>
