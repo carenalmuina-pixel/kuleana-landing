@@ -1,0 +1,45 @@
+name: Fetch external assets
+
+# Utility workflow: downloads externally generated media (e.g. AI-rendered
+# brand assets) into the repository, since some development environments
+# cannot reach the media CDN directly.
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: 'JSON array of {"url": "...", "path": "..."} objects'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download assets
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+        run: |
+          echo "$MANIFEST" | jq -c '.[]' | while read -r item; do
+            url=$(echo "$item" | jq -r .url)
+            path=$(echo "$item" | jq -r .path)
+            case "$path" in
+              /*|*..*) echo "refusing path: $path"; exit 1;;
+            esac
+            mkdir -p "$(dirname "$path")"
+            curl -sSL --fail -o "$path" "$url"
+            echo "fetched $path ($(wc -c < "$path") bytes)"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Fetch generated media assets" || echo "nothing to commit"
+          git push
