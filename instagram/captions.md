@@ -262,3 +262,28 @@ This is what a free inspection actually looks like. We check the places leaks
 start — supply lines, traps, valves, the spots carriers skip — and you walk
 every step with us. The documentation is yours to keep, whether or not you
 ever file a claim. Book yours: (808) 444-9420.
+
+### 23 · Meet your advocate — `posts/23-photo-founder.png`
+
+Brand portrait of Caren at the Kuleana desk (AI-generated brand imagery of
+Caren's own likeness — treat as staged brand photography). The tile crop
+excludes the clipboard text in the source photo, which contains an AI typo
+("Your Onn Advocate") — don't use the uncropped original elsewhere without
+fixing that.
+
+**Caption:**
+Aloha — I'm Caren. Your adjuster, not theirs. I'm a licensed public adjuster
+regulated by the same Hawaiʻi DCCA that oversees your insurance carrier, and I
+work only for homeowners. When you call Kuleana, you get me — not a call
+center. Free policy reviews and inspections, island-wide.
+
+### 24 · On site after the storm — `posts/24-photo-onsite.png`
+
+Brand portrait on a storm-damage site (AI-generated brand imagery of Caren's
+likeness — staged scene, not a real client property; keep that in mind if
+anyone asks).
+
+**Caption:**
+We don't assess your loss from a desk. Every claim starts where the damage
+is — site inspection, photos, moisture readings, documented on your property
+with you beside us. That file is what gets your claim taken seriously.
