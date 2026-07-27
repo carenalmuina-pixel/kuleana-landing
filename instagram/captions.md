@@ -249,9 +249,13 @@ next rain finds the damage first.
 
 ### 22 · Inside a free inspection — `posts/22-photo-inspection.png`
 
-Uses Caren's real inspection photo (uploaded from her iPad — authentic, no
-AI disclosure needed). Strongest trust post in the set; good pin candidate
-alongside 01.
+Uses the inspection photo uploaded from Caren's iPad, with the adjuster's
+face replaced with Caren's likeness (via her trained "Caren" identity model)
+at her request. Because the image is an AI-edited composite, treat it as
+brand imagery rather than a documentary photo — if asked, be upfront that
+it's a staged brand photo. Strongest trust post in the set; good pin
+candidate alongside 01. Original unedited photo kept at
+`img/library-inspection.jpg`.
 
 **Caption:**
 This is what a free inspection actually looks like. We check the places leaks
