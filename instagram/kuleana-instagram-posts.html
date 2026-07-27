@@ -239,14 +239,14 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
 .swipe::after { content: "\2192"; font-size: 34px; letter-spacing: 0; }
 
 /* ================= PHOTO POSTS ================= */
-.photo-frame { flex: none; position: relative; margin: 48px 104px 0; height: 620px; border: 2px solid #B8501F; padding: 14px; background: #FAF5EA; }
+.photo-frame { flex: 1; min-height: 0; position: relative; margin: 40px 104px 44px; border: 2px solid #B8501F; padding: 14px; background: #FAF5EA; }
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo-tag {
   position: absolute; right: 30px; bottom: 30px;
   font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 16px; letter-spacing: 0.18em; text-transform: uppercase;
   background: rgba(42,38,32,0.82); color: #FAF5EA; padding: 10px 18px;
 }
-.photo-body { flex: 1; display: flex; flex-direction: column; padding: 44px 104px 0; min-height: 0; }
+.photo-body { flex: none; display: flex; flex-direction: column; padding: 44px 104px 0; }
 .photo-body .display { font-size: 66px; margin-top: 22px; }
 .photo-body .body { font-size: 26px; margin-top: 22px; line-height: 1.5; }
 </style>
@@ -584,13 +584,13 @@ POST 11 · Photo post — ceiling water damage
     </div>
     <div class="head-right">Water Damage</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/library-water-damage.png" alt="Water-damaged ceiling with staining and peeling paint" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">What We Document</div>
     <h1 class="display">This ceiling was <em>whispering</em> long before it dripped.</h1>
     <p class="body">Bubbling, staining, sagging &mdash; we photograph, measure, and write the narrative your claim needs. Free inspection.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/library-water-damage.png" alt="Water-damaged ceiling with staining and peeling paint" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -613,13 +613,13 @@ POST 12 · Photo post — roof wind damage
     </div>
     <div class="head-right">Wind Damage</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-roof.png" alt="Wind-damaged asphalt shingle roof with creased and lifted shingles" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">After Every Storm</div>
     <h1 class="display">Wind damage rarely <em>announces</em> itself.</h1>
     <p class="body">Creased tabs and granule loss let the next rain straight in. A trained inspection catches it while it&rsquo;s still a claim &mdash; not a catastrophe.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-roof.png" alt="Wind-damaged asphalt shingle roof with creased and lifted shingles" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -642,13 +642,13 @@ POST 13 · Photo post — hidden mold
     </div>
     <div class="head-right">Hidden Damage</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-mold.png" alt="Opened kitchen wall revealing mold growth on studs" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Behind the Wall</div>
     <h1 class="display">What you can&rsquo;t see can <em>still</em> cost you.</h1>
     <p class="body">A supply-line leak doesn&rsquo;t stay in one room. Musty smells, discoloration, bubbling paint &mdash; document it before it spreads.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-mold.png" alt="Opened kitchen wall revealing mold growth on studs" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -671,13 +671,13 @@ POST 14 · Photo post — after the storm
     </div>
     <div class="head-right">After the Storm</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-exterior.png" alt="Hawaii home exterior with storm debris and damaged gutter" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">First 48 Hours</div>
     <h1 class="display">Before you clean up, <em>document</em> everything.</h1>
     <p class="body">Photograph the debris, the damage, and every temporary repair receipt. Your future claim is built in the first 48 hours.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-exterior.png" alt="Hawaii home exterior with storm debris and damaged gutter" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -700,13 +700,13 @@ POST 15 · Photo post — kitchen fire
     </div>
     <div class="head-right">Fire &amp; Smoke</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-fire-kitchen.png" alt="Kitchen fire damage with charred cabinets and soot" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Covered Peril &middot; Fire</div>
     <h1 class="display">Fire is fast. <em>Smoke</em> is thorough.</h1>
     <p class="body">The flames stopped at the kitchen. The smoke didn&rsquo;t. We document both &mdash; structure, contents, odor, and the residue carriers overlook.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-fire-kitchen.png" alt="Kitchen fire damage with charred cabinets and soot" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -729,13 +729,13 @@ POST 16 · Photo post — burst supply line
     </div>
     <div class="head-right">Sudden Discharge</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-pipe-bathroom.png" alt="Burst supply line under bathroom vanity with pooling water" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Covered Peril &middot; Water</div>
     <h1 class="display">One cracked hose. <em>Five rooms</em> of damage.</h1>
     <p class="body">Sudden water discharge is one of the most common covered claims &mdash; and one of the most underpaid. Shut the water off, then document everything.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-pipe-bathroom.png" alt="Burst supply line under bathroom vanity with pooling water" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -758,13 +758,13 @@ POST 17 · Photo post — lanai hurricane damage
     </div>
     <div class="head-right">Hurricane Season</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-lanai.png" alt="Hurricane wind damage to a lanai with shattered sliding door" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Wind vs. Hurricane</div>
     <h1 class="display">Wind or hurricane? Your <em>deductible</em> knows the difference.</h1>
     <p class="body">Hawai&#699;i policies often carry a separate hurricane deductible. Which one applies can change your recovery by thousands. We read the policy first.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-lanai.png" alt="Hurricane wind damage to a lanai with shattered sliding door" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -787,13 +787,13 @@ POST 18 · Photo post — smoke damage living room
     </div>
     <div class="head-right">Smoke Damage</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-smoke-living.png" alt="Living room coated in soot film after a nearby fire" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">The Invisible Loss</div>
     <h1 class="display">The fire was next door. The <em>damage</em> is yours.</h1>
     <p class="body">Soot film, odor, corrosive residue &mdash; smoke claims are real claims, even when flames never touched your home. Don&rsquo;t let it be waved off as &ldquo;just cleaning.&rdquo;</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-smoke-living.png" alt="Living room coated in soot film after a nearby fire" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -816,13 +816,13 @@ POST 19 · Photo post — solar panel storm damage
     </div>
     <div class="head-right">Storm Damage</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-solar.png" alt="Storm-damaged rooftop solar panels with cracked cells" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Don&rsquo;t Forget the Panels</div>
     <h1 class="display">Your roof isn&rsquo;t the <em>only thing</em> up there.</h1>
     <p class="body">Cracked cells and lifted racking are storm damage too. Panels, mounts, wiring, and lost production all belong in your claim.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-solar.png" alt="Storm-damaged rooftop solar panels with cracked cells" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -845,13 +845,13 @@ POST 20 · Photo post — storm water intrusion
     </div>
     <div class="head-right">Water Intrusion</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/damage-rain-window.png" alt="Rain water streaming through a window frame onto wood flooring" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">During the Storm</div>
     <h1 class="display">If it&rsquo;s coming in, <em>start recording.</em></h1>
     <p class="body">Video during the storm is evidence gold: where it entered, how fast, what it touched. Then call us &mdash; before the carrier&rsquo;s adjuster visits.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/damage-rain-window.png" alt="Rain water streaming through a window frame onto wood flooring" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -874,13 +874,13 @@ POST 21 · Photo post — hail (from Caren's library)
     </div>
     <div class="head-right">Hail &amp; Impact</div>
   </header>
-  <div class="photo-frame">
-    <img src="img/library-hail.png" alt="Hand holding hailstones after a hailstorm" width="948" height="588" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">After the Hailstorm</div>
     <h1 class="display">Hail doesn&rsquo;t just dent metal. It <em>bruises</em> roofs.</h1>
     <p class="body">Even when nothing looks wrong from the ground, impact bruising shortens your roof&rsquo;s life. If hail hit your neighborhood, get it inspected before the next rain.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/library-hail.png" alt="Hand holding hailstones after a hailstorm" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -903,13 +903,13 @@ POST 22 · Photo post — real inspection (Caren's photo)
     </div>
     <div class="head-right">How We Work</div>
   </header>
-  <div class="photo-frame" style="height: 680px;">
-    <img src="img/library-inspection-caren.png" alt="Kuleana adjuster walking a homeowner through an under-sink inspection" width="948" height="648" style="object-position: 50% 30%;" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Inside a Free Inspection</div>
     <h1 class="display" style="font-size: 62px;">We look where leaks start &mdash; <em>with</em> you, not for you.</h1>
     <p class="body" style="font-size: 25px;">Supply lines, traps, valves, the spots carriers skip. You walk every step with us, and the documentation is yours to keep.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/library-inspection-caren.png" alt="Kuleana adjuster walking a homeowner through an under-sink inspection" width="948" height="648" style="object-position: 50% 30%;" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -932,13 +932,13 @@ POST 23 · Photo post — meet your advocate (brand portrait)
     </div>
     <div class="head-right">The Founder</div>
   </header>
-  <div class="photo-frame" style="height: 680px;">
-    <img src="img/library-founder-desk-2k.png" alt="Caren Almuina at the Kuleana Claim Solutions office" width="948" height="648" style="object-position: 50% 22%;" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">Meet Your Advocate</div>
     <h1 class="display" style="font-size: 62px;">Aloha &mdash; I&rsquo;m Caren. <em>Your</em> adjuster, not theirs.</h1>
     <p class="body" style="font-size: 25px;">Licensed public adjuster, regulated by the same DCCA that oversees your carrier. When you call Kuleana, you get me &mdash; not a call center.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/library-founder-desk-2k.png" alt="Caren Almuina at the Kuleana Claim Solutions office" width="948" height="648" style="object-position: 50% 22%;" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -961,13 +961,13 @@ POST 24 · Photo post — on-site after the storm (brand portrait)
     </div>
     <div class="head-right">On Site</div>
   </header>
-  <div class="photo-frame" style="height: 680px;">
-    <img src="img/library-founder-site.jpg" alt="Caren Almuina on site at a storm-damaged Hawaii home" width="948" height="648" style="object-position: 50% 26%;" />
-  </div>
   <div class="photo-body">
     <div class="eyebrow">After the Storm</div>
     <h1 class="display" style="font-size: 62px;">We don&rsquo;t assess your loss <em>from a desk.</em></h1>
     <p class="body" style="font-size: 25px;">Every claim starts where the damage is. Site inspection, photos, moisture readings &mdash; documented on your property, with you beside us.</p>
+  </div>
+  <div class="photo-frame">
+    <img src="img/library-founder-site.jpg" alt="Caren Almuina on site at a storm-damaged Hawaii home" width="948" height="648" style="object-position: 50% 26%;" />
   </div>
   <footer class="foot">
     <div class="foot-top">
