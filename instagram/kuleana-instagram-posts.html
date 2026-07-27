@@ -240,6 +240,10 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
 
 /* ================= PHOTO POSTS ================= */
 .photo-frame { flex: 1; min-height: 0; position: relative; margin: 40px 104px 44px; border: 2px solid #B8501F; padding: 14px; background: #FAF5EA; }
+.post--green .photo-frame { border-color: #F7DBA7; background: #3F5A41; }
+.post--terra .photo-frame { border-color: #FAF5EA; background: #B8501F; }
+.post--phototop .photo-frame { margin: 40px 104px 0; }
+.post--phototop .photo-body { padding: 40px 104px 10px; }
 .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo-tag {
   position: absolute; right: 30px; bottom: 30px;
@@ -575,7 +579,7 @@ POST 10 · Denial quote
 <!-- ============================================================
 POST 11 · Photo post — ceiling water damage
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--green post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -584,13 +588,13 @@ POST 11 · Photo post — ceiling water damage
     </div>
     <div class="head-right">Water Damage</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/library-water-damage.png" alt="Water-damaged ceiling with staining and peeling paint" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">What We Document</div>
     <h1 class="display">This ceiling was <em>whispering</em> long before it dripped.</h1>
     <p class="body">Bubbling, staining, sagging &mdash; we photograph, measure, and write the narrative your claim needs. Free inspection.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/library-water-damage.png" alt="Water-damaged ceiling with staining and peeling paint" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -633,7 +637,7 @@ POST 12 · Photo post — roof wind damage
 <!-- ============================================================
 POST 13 · Photo post — hidden mold
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--terra post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -642,13 +646,13 @@ POST 13 · Photo post — hidden mold
     </div>
     <div class="head-right">Hidden Damage</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/damage-mold.png" alt="Opened kitchen wall revealing mold growth on studs" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">Behind the Wall</div>
     <h1 class="display">What you can&rsquo;t see can <em>still</em> cost you.</h1>
     <p class="body">A supply-line leak doesn&rsquo;t stay in one room. Musty smells, discoloration, bubbling paint &mdash; document it before it spreads.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/damage-mold.png" alt="Opened kitchen wall revealing mold growth on studs" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -662,7 +666,7 @@ POST 13 · Photo post — hidden mold
 <!-- ============================================================
 POST 14 · Photo post — after the storm
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -691,7 +695,7 @@ POST 14 · Photo post — after the storm
 <!-- ============================================================
 POST 15 · Photo post — kitchen fire
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -700,13 +704,13 @@ POST 15 · Photo post — kitchen fire
     </div>
     <div class="head-right">Fire &amp; Smoke</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/damage-fire-kitchen.png" alt="Kitchen fire damage with charred cabinets and soot" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">Covered Peril &middot; Fire</div>
     <h1 class="display">Fire is fast. <em>Smoke</em> is thorough.</h1>
     <p class="body">The flames stopped at the kitchen. The smoke didn&rsquo;t. We document both &mdash; structure, contents, odor, and the residue carriers overlook.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/damage-fire-kitchen.png" alt="Kitchen fire damage with charred cabinets and soot" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -720,7 +724,7 @@ POST 15 · Photo post — kitchen fire
 <!-- ============================================================
 POST 16 · Photo post — burst supply line
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--terra" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -749,7 +753,7 @@ POST 16 · Photo post — burst supply line
 <!-- ============================================================
 POST 17 · Photo post — lanai hurricane damage
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--green post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -758,13 +762,13 @@ POST 17 · Photo post — lanai hurricane damage
     </div>
     <div class="head-right">Hurricane Season</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/damage-lanai.png" alt="Hurricane wind damage to a lanai with shattered sliding door" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">Wind vs. Hurricane</div>
     <h1 class="display">Wind or hurricane? Your <em>deductible</em> knows the difference.</h1>
     <p class="body">Hawai&#699;i policies often carry a separate hurricane deductible. Which one applies can change your recovery by thousands. We read the policy first.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/damage-lanai.png" alt="Hurricane wind damage to a lanai with shattered sliding door" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -807,7 +811,7 @@ POST 18 · Photo post — smoke damage living room
 <!-- ============================================================
 POST 19 · Photo post — solar panel storm damage
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -816,13 +820,13 @@ POST 19 · Photo post — solar panel storm damage
     </div>
     <div class="head-right">Storm Damage</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/damage-solar.png" alt="Storm-damaged rooftop solar panels with cracked cells" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">Don&rsquo;t Forget the Panels</div>
     <h1 class="display">Your roof isn&rsquo;t the <em>only thing</em> up there.</h1>
     <p class="body">Cracked cells and lifted racking are storm damage too. Panels, mounts, wiring, and lost production all belong in your claim.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/damage-solar.png" alt="Storm-damaged rooftop solar panels with cracked cells" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -836,7 +840,7 @@ POST 19 · Photo post — solar panel storm damage
 <!-- ============================================================
 POST 20 · Photo post — storm water intrusion
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -865,7 +869,7 @@ POST 20 · Photo post — storm water intrusion
 <!-- ============================================================
 POST 21 · Photo post — hail (from Caren's library)
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -874,13 +878,13 @@ POST 21 · Photo post — hail (from Caren's library)
     </div>
     <div class="head-right">Hail &amp; Impact</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/library-hail.png" alt="Hand holding hailstones after a hailstorm" width="948" height="588" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">After the Hailstorm</div>
     <h1 class="display">Hail doesn&rsquo;t just dent metal. It <em>bruises</em> roofs.</h1>
     <p class="body">Even when nothing looks wrong from the ground, impact bruising shortens your roof&rsquo;s life. If hail hit your neighborhood, get it inspected before the next rain.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/library-hail.png" alt="Hand holding hailstones after a hailstorm" width="948" height="588" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -894,7 +898,7 @@ POST 21 · Photo post — hail (from Caren's library)
 <!-- ============================================================
 POST 22 · Photo post — real inspection (Caren's photo)
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -923,7 +927,7 @@ POST 22 · Photo post — real inspection (Caren's photo)
 <!-- ============================================================
 POST 23 · Photo post — meet your advocate (brand portrait)
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--phototop" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
@@ -932,13 +936,13 @@ POST 23 · Photo post — meet your advocate (brand portrait)
     </div>
     <div class="head-right">The Founder</div>
   </header>
+  <div class="photo-frame">
+    <img src="img/library-founder-desk-2k.png" alt="Caren Almuina at the Kuleana Claim Solutions office" width="948" height="648" style="object-position: 50% 22%;" />
+  </div>
   <div class="photo-body">
     <div class="eyebrow">Meet Your Advocate</div>
     <h1 class="display" style="font-size: 62px;">Aloha &mdash; I&rsquo;m Caren. <em>Your</em> adjuster, not theirs.</h1>
     <p class="body" style="font-size: 25px;">Licensed public adjuster, regulated by the same DCCA that oversees your carrier. When you call Kuleana, you get me &mdash; not a call center.</p>
-  </div>
-  <div class="photo-frame">
-    <img src="img/library-founder-desk-2k.png" alt="Caren Almuina at the Kuleana Claim Solutions office" width="948" height="648" style="object-position: 50% 22%;" />
   </div>
   <footer class="foot">
     <div class="foot-top">
@@ -952,7 +956,7 @@ POST 23 · Photo post — meet your advocate (brand portrait)
 <!-- ============================================================
 POST 24 · Photo post — on-site after the storm (brand portrait)
 ============================================================ -->
-<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+<div class="post post--terra" data-canvas-width="1080" data-canvas-height="1350">
   <div class="goldline"></div>
   <header class="head">
     <div class="brandlock">
