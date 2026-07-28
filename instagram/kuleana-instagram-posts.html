@@ -253,6 +253,51 @@ body { background: #E9E2D2; display: flex; flex-direction: column; align-items: 
 .photo-body { flex: none; display: flex; flex-direction: column; padding: 44px 104px 0; }
 .photo-body .display { font-size: 66px; margin-top: 22px; }
 .photo-body .body { font-size: 26px; margin-top: 22px; line-height: 1.5; }
+
+/* ================= REFERENCE-INSPIRED LAYOUTS (25-29) ================= */
+.arch-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 40px 90px 0; min-height: 0; }
+.arch { width: 100%; flex: 1; min-height: 0; background: linear-gradient(180deg, #F7DBA7, #B8501F);
+  border-radius: 440px 440px 0 0; padding: 22px 22px 0; }
+.arch-inner { width: 100%; height: 100%; background: #3F5A41; border-radius: 420px 420px 0 0;
+  display: flex; flex-direction: column; align-items: center; text-align: center; padding: 120px 70px 40px; }
+.arch-cta { margin-top: 44px; border: 1.5px solid #F7DBA7; color: #F7DBA7; padding: 20px 44px;
+  font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 21px; letter-spacing: 0.3em; text-transform: uppercase; }
+.arch-dots { display: flex; gap: 40px; padding: 26px 0 6px; font-family: 'Lora', Georgia, serif; font-size: 19px; color: #4F4A41; }
+.arch-dots span::before { content: "\2022"; color: #B8501F; margin-right: 10px; }
+
+.faq-split { flex: 1; display: flex; min-height: 0; }
+.faq-left { width: 300px; background: #3F5A41; padding: 50px 40px; display: flex; flex-direction: column; }
+.faq-q { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 18px; letter-spacing: 0.3em; color: #F7DBA7; }
+.faq-num { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 150px; line-height: 1; color: #FAF5EA; margin-top: 8px; }
+.faq-note { margin-top: auto; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 24px; color: rgba(250,245,234,0.75); }
+.faq-right { flex: 1; padding: 50px 60px 40px; display: flex; flex-direction: column; }
+.pullquote { margin-top: auto; background: rgba(63,90,65,0.08); border-left: 3px solid #B8501F; padding: 26px 30px;
+  font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 30px; line-height: 1.35; color: #2E4231; }
+
+.svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 54px; }
+.svc { border: 1px solid rgba(250,245,234,0.28); padding: 32px 30px 36px; }
+.svc i { font-style: normal; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 18px; letter-spacing: 0.24em; color: #F7DBA7; }
+.svc h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 42px; color: #FAF5EA; margin: 12px 0 10px; }
+.svc p { font-family: 'Lora', Georgia, serif; font-size: 23px; line-height: 1.45; color: rgba(250,245,234,0.82); }
+
+.story-marks { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 200px; line-height: 0.4; color: #F7DBA7; margin: 46px 0 0; }
+.story-quote { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 66px; line-height: 1.22; color: #2E4231; margin-top: 30px; }
+.story-quote em { font-style: italic; color: #B8501F; }
+.story-attrib { display: flex; align-items: center; gap: 22px; margin-top: 48px; }
+.story-avatar { width: 84px; height: 84px; border-radius: 50%; background: #3F5A41; color: #FAF5EA;
+  display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 40px; }
+.story-name { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 26px; color: #2A2620; }
+.story-meta { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 17px; letter-spacing: 0.2em; text-transform: uppercase; color: #B8501F; margin-top: 6px; }
+.story-stars { margin-left: auto; color: #B8501F; font-size: 30px; letter-spacing: 8px; }
+
+.tip-band { flex: none; background: #3F5A41; margin: 0; padding: 36px 104px 40px; display: flex; justify-content: space-between; align-items: center; }
+.tip-band .eyebrow { color: #F7DBA7; }
+.tip-no { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 90px; line-height: 0.9; color: #FAF5EA; }
+.tip-no sup { font-size: 30px; color: #F7DBA7; }
+.checks { margin-top: 46px; display: flex; flex-direction: column; gap: 26px; }
+.check { display: flex; gap: 22px; align-items: baseline; font-family: 'Lora', Georgia, serif; font-size: 27px; color: #2A2620; }
+.check b { flex: none; width: 40px; height: 40px; border-radius: 50%; background: #B8501F; color: #FAF5EA;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -972,6 +1017,167 @@ POST 24 · Photo post — on-site after the storm (brand portrait)
   </div>
   <div class="photo-frame">
     <img src="img/library-founder-site.jpg" alt="Caren Almuina on site at a storm-damaged Hawaii home" width="948" height="648" style="object-position: 50% 26%;" />
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 25 · Layout: arch CTA
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Free Claim Review</div>
+  </header>
+  <div class="arch-wrap">
+    <div class="arch"><div class="arch-inner">
+      <div class="eyebrow" style="justify-content:center;">Free Claim Review</div>
+      <h1 class="display" style="font-size: 84px; color: #FAF5EA; margin-top: 34px;">Storm, fire, water,<br/>or <em style="color:#F7DBA7;">denial?</em></h1>
+      <p class="body" style="color: rgba(250,245,234,0.85); font-size: 27px; margin-top: 36px; max-width: 640px;">Send me the details. I&rsquo;ll tell you &mdash; honestly &mdash; whether there&rsquo;s room to recover more. No pressure, and no fee unless we recover.</p>
+      <div class="arch-cta">DM &nbsp;&middot;&nbsp; ALOHA</div>
+    </div></div>
+    <div class="arch-dots"><span>@kuleanaclaims</span><span>kuleanaclaims.com</span><span>Serving all islands</span></div>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 26 · Layout: FAQ split panel
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">FAQ</div>
+  </header>
+  <div class="faq-split">
+    <div class="faq-left">
+      <div class="faq-q">FAQ &middot; Q</div>
+      <div class="faq-num">01</div>
+      <div class="faq-note">A question we hear every week.</div>
+    </div>
+    <div class="faq-right">
+      <div class="eyebrow">Frequently Asked</div>
+      <h1 class="display" style="font-size: 72px; margin-top: 30px;">&ldquo;Won&rsquo;t my insurer just <em>be fair?</em>&rdquo;</h1>
+      <p class="body" style="font-size: 27px; margin-top: 34px;">The adjuster your carrier sends works for the carrier &mdash; even the good ones write the scope the company will accept. A public adjuster is required by law to represent only you, and builds the file your claim deserves.</p>
+      <div class="pullquote">You wouldn&rsquo;t go to court without a lawyer. Don&rsquo;t file a claim without an advocate.</div>
+    </div>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 27 · Layout: services grid
+============================================================ -->
+<div class="post post--green" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">How I Help</div>
+  </header>
+  <div class="inner">
+    <div class="eyebrow">How I Help</div>
+    <h1 class="display" style="font-size: 78px; margin-top: 34px;">Four ways I stand between you and <em>the insurer.</em></h1>
+    <div class="svc-grid">
+      <div class="svc"><i>01</i><h3>Claim Review</h3><p>Free evaluation of your policy, damage, and any offer already on the table.</p></div>
+      <div class="svc"><i>02</i><h3>Full Filing</h3><p>End-to-end documentation, scope of loss, and negotiation on your behalf.</p></div>
+      <div class="svc"><i>03</i><h3>Denied &amp; Underpaid</h3><p>Reopen and re-negotiate claims that were closed too fast or too low.</p></div>
+      <div class="svc"><i>04</i><h3>Small Business</h3><p>Business interruption, contents, and property loss &mdash; documented right.</p></div>
+    </div>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 28 · Layout: client story (TEMPLATE — needs a real quote)
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Client Story</div>
+  </header>
+  <div class="inner">
+    <div class="eyebrow">Client Story</div>
+    <div class="story-marks">&rdquo;</div>
+    <p class="story-quote">[Your client&rsquo;s words here &mdash; <em>real quotes only,</em> posted with written permission.]</p>
+    <div class="story-attrib">
+      <div class="story-avatar">A</div>
+      <div><div class="story-name">[Client name]</div><div class="story-meta">[Island] &middot; [Loss type]</div></div>
+      <div class="story-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+  </div>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-contact">(808) 444-9420</div>
+      <div class="foot-site">kuleanaclaims.com</div>
+    </div>
+    <div class="lic">HI Public Adjuster License #19246735 &middot; Hawai&#699;i DCCA Insurance Division &middot; No recovery, no fee</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+POST 29 · Layout: policyholder tip
+============================================================ -->
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="goldline"></div>
+  <header class="head">
+    <div class="brandlock">
+      <span class="kmark"></span>
+      <div class="wordmark">KULEANA<span>CLAIM SOLUTIONS</span></div>
+    </div>
+    <div class="head-right">Policyholder Tip</div>
+  </header>
+  <div class="tip-band">
+    <div class="eyebrow">Policyholder Tip</div>
+    <div class="tip-no"><sup>N&ordm;</sup> 01</div>
+  </div>
+  <div class="inner" style="padding-top: 46px;">
+    <h1 class="display" style="font-size: 82px;">Document <em>before</em> you clean up.</h1>
+    <p class="body" style="margin-top: 26px; max-width: 830px;">Payouts shrink when the damage is no longer visible. Ten minutes with your phone protects thousands.</p>
+    <div class="checks">
+      <div class="check"><b>1</b><span>Photograph every room &mdash; wide, then close.</span></div>
+      <div class="check"><b>2</b><span>Video-walk each area, narrating what you see.</span></div>
+      <div class="check"><b>3</b><span>Keep damaged items until an adjuster inspects.</span></div>
+      <div class="check"><b>4</b><span>Save receipts &mdash; mitigation, hotels, meals.</span></div>
+    </div>
   </div>
   <footer class="foot">
     <div class="foot-top">

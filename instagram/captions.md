@@ -313,3 +313,23 @@ Hurricane season is here — and Hawaiʻi's rules have changed. The Hurricane
 Relief Fund is back (Act 296), your hurricane deductible is separate and
 percentage-based, and claims are won before the storm. Free baseline
 inspections, island-wide.
+
+---
+
+## Layout family 25–29 (reference-inspired, adapted to brand palette)
+
+New layout patterns adapted from Caren's reference designs (arch CTA, FAQ
+split-panel, services grid, client story, numbered tip) — rebuilt in the
+Kuleana green/terracotta/gold system at 4:5. Compliance adaptations: the
+reference's "recovers 2–3× more" outcome claim was replaced with factual
+copy, and the client-story tile ships as a TEMPLATE — post it only with a
+real client quote and written permission.
+
+- `posts/25-arch-cta.png` — free claim review CTA (pairs with the POLICY/ALOHA
+  DM automation; set the keyword before posting)
+- `posts/26-faq.png` — FAQ Nº 01: "Won't my insurer just be fair?" (numbered
+  series — future FAQs reuse this layout)
+- `posts/27-services.png` — "Four ways I stand between you and the insurer"
+- `posts/28-client-story-template.png` — TEMPLATE, needs real quote + consent
+- `posts/29-policy-tip.png` — Policyholder Tip Nº 01: document before cleanup
+  (numbered series)
