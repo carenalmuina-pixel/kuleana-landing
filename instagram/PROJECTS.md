@@ -13,10 +13,15 @@ Jul 28, 2026. Nothing has been published to any social platform.
 - ✅ **KUL set complete:** 24 tiles (`posts/`), 7 reels (`video/`), source
   imagery (`img/`), self-contained HTML source, captions, compliance docs.
   Posts 22–24 rendered but unscheduled (backups).
-- ⬜ **MCC set:** 15 Monarch briefs in `schedule.md` await production
-  (black & gold, crown, FL contact/license). Not started — needs Caren's go.
+- ✅ **MCC set complete:** 21 tiles in `monarch/posts/` cover all 15 briefs
+  (black & gold System A, crown, FL license/disclaimer). Captions:
+  `monarch/captions.md`. Source: `monarch/monarch-instagram-posts.html`.
+  M21 is a template — fill placeholders + client consent before posting.
 - ⬜ **Reel pipeline:** 50 topics in `reels-content-plan.md`; next batch on
   Caren's pick.
+- 🔵 **Avatar reels (new):** latest @yenclaims post analyzed and archived
+  (`video/mcc-latest-post.mp4`); Selenite + own-voiceover production plan
+  in `avatar-reels-pipeline.md` with a 6-reel first batch awaiting go.
 
 ## 3 · Scheduling — ✅ drafted, awaiting approval
 - `schedule.md`: master queue — KUL assets in grid-cohesive order, MCC brief
