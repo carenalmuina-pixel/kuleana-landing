@@ -348,6 +348,17 @@ td .tag { display: inline-block; margin-left: 10px; font-size: 11px; font-weight
 .est-hand { font-family: 'Allura', cursive; font-size: 37px; color: #8A3C16; transform: rotate(-1.2deg); white-space: nowrap; }
 .est-spec { margin-top: 14px; border-top: 1px solid #D9CFB6; padding-top: 10px;
   font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A8175; }
+
+.est-bottom { display: flex; gap: 26px; margin-top: 20px; align-items: stretch; }
+.est-compare { flex: 1; border: 1.5px solid #2A2620; padding: 18px 22px; }
+.est-compare h4 { font-size: 13px; letter-spacing: 0.22em; color: #8A8175; font-weight: 700; margin-bottom: 12px; }
+.est-compare .cmp { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 0; }
+.est-compare .cmp + .cmp { border-top: 1px dotted #C9BFA6; }
+.est-compare .cmp span { font-size: 16px; color: #4F4A41; }
+.est-compare .cmp b { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 34px; line-height: 1; }
+.est-compare .cmp.carrier b { color: #8A3C16; }
+.est-compare .cmp.ours b { color: #2E4231; }
+.est-hand-wide { margin-top: 26px; text-align: center; font-family: 'Allura', cursive; white-space: nowrap; font-size: 41px; line-height: 1.1; color: #8A3C16; transform: rotate(-1.2deg); }
 </style>
 </head>
 <body>
@@ -1314,16 +1325,20 @@ POST 30 · Signature — Xactimate-style estimate (v2)
         <tr class="miss"><td class="n">9.</td><td>Contents manipulation &amp; block furniture <span class="tag">OMITTED BY CARRIER</span></td><td class="r">1.00 EA</td><td class="r">58.71</td><td class="r">58.71</td></tr>
       </table>
       <div class="room" style="margin-top: 18px;">LIVING ROOM &middot; HALLWAY &middot; ATTIC <span>38 additional line items &mdash; continued&hellip;</span></div>
-      <div class="est-tot">
-        <div class="trow"><span>Line Item Total (this room)</span><span class="redact"></span></div>
-        <div class="trow"><span>O&amp;P &middot; Tax</span><span class="redact" style="width:90px;"></span></div>
-        <div class="trow"><b>Replacement Cost Value</b><span class="redact"></span></div>
+      <div class="est-bottom">
+        <div class="est-compare">
+          <h4>ESTIMATE COMPARISON</h4>
+          <div class="cmp carrier"><span>Carrier estimate &middot; one room</span><b>9 items</b></div>
+          <div class="cmp ours"><span>Kuleana estimate &middot; four rooms</span><b>47 items</b></div>
+        </div>
+        <div class="est-tot" style="margin-top: 0; width: 430px;">
+          <div class="trow"><span>Line Item Total (this room)</span><span class="redact"></span></div>
+          <div class="trow"><span>O&amp;P &middot; Tax</span><span class="redact" style="width:90px;"></span></div>
+          <div class="trow"><b>Replacement Cost Value</b><span class="redact"></span></div>
+        </div>
       </div>
-      <div class="est-note">
-        <div class="est-summary">Carrier estimate: 9 line items, one room.<br/>Kuleana estimate: 47 line items, four rooms.</div>
-        <div class="est-hand" style="white-space: normal; text-align: right; line-height: 1.15;">They stopped at the drywall.<br/>The water didn&rsquo;t. &mdash; C.</div>
-      </div>
-      <div class="est-spec">Specimen estimate &mdash; illustrative format only, not a client record. Values redacted.</div>
+      <div class="est-hand-wide">They stopped at the drywall. The water didn&rsquo;t. &mdash; C.</div>
+      <div class="est-spec" style="margin-top: auto;">Specimen estimate &mdash; illustrative format only, not a client record. Values redacted.</div>
     </div>
   </div>
   <footer class="foot">
