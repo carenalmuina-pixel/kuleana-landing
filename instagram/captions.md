@@ -1,4 +1,8 @@
-# Kuleana Claim Solutions — Instagram Redesign (@yenclaims)
+# Kuleana Claim Solutions — Instagram Set (@kuleanaclaims)
+
+> **Account note (updated):** this set publishes to **@kuleanaclaims** (KUL).
+> @yenclaims remains Monarch Claims Consultants (MCC) and keeps the Monarch
+> identity — see `schedule.md` for the two-account queue.
 
 Redesign of the recurring post formats on @yenclaims, moved from Monarch Claims
 Consultants branding (crown, #ClaimWhatsYours, Miami contact info) to the
