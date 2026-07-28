@@ -1,105 +1,75 @@
-# Combined Posting Schedule — @yenclaims (Kuleana) + BrazucaInCopa
+# Master Posting Queue — All Accounts
 
 **Status: DRAFT — nothing has been uploaded or scheduled on any platform.**
-This merges the Kuleana Instagram launch plan with the posting rhythm from
-Caren's BrazucaInCopa sheets (`BrasucaInCopa_Content_Master` and
-`BrasucaInCopa_Posting_Schedule_TODAY` in Google Drive) into one master
-calendar, so both accounts' workload is visible in a single view.
+One ordered queue across both accounts. Post in Q-number order and everything
+lands cohesively: the @yenclaims grid alternates color and format with no two
+same-colored tiles adjacent, reels drop every Thursday/Friday, and
+BrazucaInCopa keeps its Tue/Thu/Sun evening rhythm from the Content Master.
 
-**Removed from the schedule at Caren's request:** posts 22 (inspection),
-23 (founder desk), 24 (on-site) — the three portrait posts. Their files stay
-in `posts/` as unscheduled backups; nothing else references them.
+**Accounts:** KUL = @yenclaims (times HST) · BIC = BrazucaInCopa
+(TikTok + IG Reels + YT Shorts, times ET, scripts from
+`BrasucaInCopa_Content_Master` "Ready" rows).
 
-**Accounts & conventions**
+**Grid logic (KUL):** feed tiles post in this exact order so the 3-across
+grid rows always mix cream / deep green / terracotta and alternate
+photo-posts with text tiles. Color of each tile is noted (C/G/T).
+Posts 22–24 remain unscheduled (removed earlier; files kept as backups).
 
-- **KUL** = @yenclaims (Kuleana Claim Solutions). Feed tiles + reels.
-  Times in **HST** (Hawaii audience). Captions in `captions.md`.
-- **BIC** = BrazucaInCopa (TikTok + IG Reels + YT Shorts). Times in **ET**
-  (South Florida audience), matching the times used in Caren's sheets.
-  With the World Cup over, BIC runs the **evergreen formats marked "Ready"**
-  in the Content Master — DYK tournament facts, country histories, jokes,
-  and "A Seleção Speaks" opinions — 3 evenings a week (Tue / Thu / Sun),
-  scripts pulled straight from the master sheet rows.
-- Cadence per account stays light enough to sustain: KUL 4–5×/week,
-  BIC 3×/week. Sundays are KUL-off; Saturdays are BIC-off.
+| Q | Date | Time | Acct | Item | Source |
+|---|---|---|---|---|---|
+| 1 | Mon Aug 3 | 9:00 AM HST | KUL | Brand anchor (G) — PIN | `posts/01-brand-anchor.png` · §01 |
+| 2 | Tue Aug 4 | 9:45 PM ET | BIC | DYK: 1954 Miracle of Bern | Content Master |
+| 3 | Wed Aug 5 | 9:00 AM HST | KUL | Warning signs (C) | `posts/02-warning-signs.png` · §02 |
+| 4 | Thu Aug 6 | 5:00 PM HST | KUL | **Reel** — water damage | `video/kuleana-water-damage-reel.mp4` |
+| 5 | Thu Aug 6 | 9:45 PM ET | BIC | Country history: Norway | Content Master |
+| 6 | Fri Aug 7 | 9:00 AM HST | KUL | Denial quote (T) | `posts/10-denial-quote.png` · §10 |
+| 7 | Sat Aug 8 | 9:00 AM HST | KUL | Two adjusters (G) | `posts/03-two-adjusters.png` · §03 |
+| 8 | Sun Aug 9 | 9:45 PM ET | BIC | Joke: penalty-shootout self | Content Master |
+| 9 | Mon Aug 10 | 9:00 AM HST | KUL | Fine-print carousel (C) | `posts/04…07-*.png` · §04–07 |
+| 10 | Tue Aug 11 | 9:45 PM ET | BIC | A Seleção Speaks: missed pens | Content Master |
+| 11 | Wed Aug 12 | 9:00 AM HST | KUL | Ceiling water photo (G) | `posts/11-photo-ceiling.png` · §11 |
+| 12 | Thu Aug 13 | 5:00 PM HST | KUL | **Reel** — pipe burst | `video/kuleana-pipe-burst-reel.mp4` |
+| 13 | Thu Aug 13 | 9:45 PM ET | BIC | DYK: 1930 first World Cup | Content Master |
+| 14 | Fri Aug 14 | 9:00 AM HST | KUL | Roof wind photo (C) | `posts/12-photo-roof.png` · §12 |
+| 15 | Sat Aug 15 | 9:00 AM HST | KUL | Storm baseline (G) | `posts/09-storm-baseline.png` · §09 |
+| 16 | Sun Aug 16 | 9:45 PM ET | BIC | Country history: Canada | Content Master |
+| 17 | Mon Aug 17 | 9:00 AM HST | KUL | Solar panels (C) | `posts/19-photo-solar.png` · §19 |
+| 18 | Tue Aug 18 | 9:45 PM ET | BIC | Joke: VAR lawyer friend | Content Master |
+| 19 | Wed Aug 19 | 9:00 AM HST | KUL | Hurricane deductible (G) | `posts/17-photo-lanai.png` · §17 |
+| 20 | Thu Aug 20 | 5:00 PM HST | KUL | **Reel** — wind damage | `video/kuleana-wind-damage-reel.mp4` |
+| 21 | Thu Aug 20 | 9:45 PM ET | BIC | Country history: England 1966 | Content Master |
+| 22 | Fri Aug 21 | 9:00 AM HST | KUL | Roof checklist (C) | `posts/08-roof-checklist.png` · §08 |
+| 23 | Sat Aug 22 | 9:00 AM HST | KUL | Storm aftermath photo (G) | `posts/14-photo-storm.png` · §14 |
+| 24 | Sun Aug 23 | 9:45 PM ET | BIC | A Seleção Speaks: defending | Content Master |
+| 25 | Mon Aug 24 | 9:00 AM HST | KUL | Hail bruising (C) | `posts/21-photo-hail.png` · §21 |
+| 26 | Tue Aug 25 | 9:45 PM ET | BIC | DYK: WWII shoebox trophy | Content Master |
+| 27 | Wed Aug 26 | 9:00 AM HST | KUL | Rain intrusion (G) | `posts/20-photo-rain.png` · §20 |
+| 28 | Thu Aug 27 | 9:45 PM ET | BIC | Country history: Portugal | Content Master |
+| 29 | Fri Aug 28 | 9:00 AM HST | KUL | Kitchen fire (C) | `posts/15-photo-fire.png` · §15 |
+| 30 | Fri Aug 28 | 5:00 PM HST | KUL | **Reel** — fire damage | `video/kuleana-fire-damage-reel.mp4` |
+| 31 | Sat Aug 29 | 9:00 AM HST | KUL | Burst supply line (T) | `posts/16-photo-pipe.png` · §16 |
+| 32 | Sun Aug 30 | 9:45 PM ET | BIC | Joke: fake appointment | Content Master |
+| 33 | Mon Aug 31 | 9:00 AM HST | KUL | Smoke damage (C) | `posts/18-photo-smoke.png` · §18 |
+| 34 | Tue Sep 1 | 9:45 PM ET | BIC | A Seleção Speaks: finals nerves | Content Master |
+| 35 | Wed Sep 2 | 9:00 AM HST | KUL | Hidden mold (T) | `posts/13-photo-mold.png` · §13 |
+| 36 | Thu Sep 3 | 9:45 PM ET | BIC | DYK: Rossi 1982 | Content Master |
+| 37 | Sun Sep 6 | 9:45 PM ET | BIC | Country history: Belgium | Content Master |
 
-## Week 1 — Kuleana rebrand launch (Aug 3–9)
+## Cohesion check
 
-| Date | Time | Acct | Item | Source |
-|---|---|---|---|---|
-| Mon Aug 3 | 9:00 AM HST | KUL | Brand anchor — rebrand announcement (PIN) | `posts/01-brand-anchor.png` · §01 |
-| Tue Aug 4 | 9:45 PM ET | BIC | DYK: 1954 Miracle of Bern | Content Master "1954 tournament fact" |
-| Wed Aug 5 | 9:00 AM HST | KUL | Two adjusters | `posts/03-two-adjusters.png` · §03 |
-| Thu Aug 6 | 5:00 PM HST | KUL | **Reel** — water damage | `video/kuleana-water-damage-reel.mp4` |
-| Thu Aug 6 | 9:45 PM ET | BIC | Country history: Norway/Haaland | Content Master "Norway — country history" |
-| Fri Aug 7 | 9:00 AM HST | KUL | Denial quote | `posts/10-denial-quote.png` · §10 |
-| Sat Aug 8 | 9:00 AM HST | KUL | Warning signs | `posts/02-warning-signs.png` · §02 |
-| Sun Aug 9 | 9:45 PM ET | BIC | Joke: penalty-shootout self | Content Master "Joke of the day" (Jul 1 row) |
-
-## Week 2 — Policy literacy (Aug 10–16)
-
-| Date | Time | Acct | Item | Source |
-|---|---|---|---|---|
-| Mon Aug 10 | 9:00 AM HST | KUL | Fine-print carousel (4 slides) | `posts/04…07-*.png` · §04–07 |
-| Tue Aug 11 | 9:45 PM ET | BIC | A Seleção Speaks: missed penalty ≠ choking | Content Master (Jul 1 V4) |
-| Wed Aug 12 | 9:00 AM HST | KUL | Ceiling water damage photo | `posts/11-photo-ceiling.png` · §11 |
-| Thu Aug 13 | 5:00 PM HST | KUL | **Reel** — pipe burst | `video/kuleana-pipe-burst-reel.mp4` |
-| Thu Aug 13 | 9:45 PM ET | BIC | DYK: 1930 first World Cup | Content Master "1930 tournament fact" |
-| Fri Aug 14 | 9:00 AM HST | KUL | Storm baseline checklist | `posts/09-storm-baseline.png` · §09 |
-| Sun Aug 16 | 9:45 PM ET | BIC | Country history: Canada glow-up | Content Master "Canada — country history" |
-
-## Week 3 — Hurricane season push (Aug 17–23)
-
-| Date | Time | Acct | Item | Source |
-|---|---|---|---|---|
-| Mon Aug 17 | 9:00 AM HST | KUL | Wind vs. hurricane deductible | `posts/17-photo-lanai.png` · §17 |
-| Tue Aug 18 | 9:45 PM ET | BIC | Joke: VAR lawyer friend | Content Master (Jul 4 "Joke of the day") |
-| Wed Aug 19 | 9:00 AM HST | KUL | Roof wind damage photo | `posts/12-photo-roof.png` · §12 |
-| Thu Aug 20 | 5:00 PM HST | KUL | **Reel** — wind damage | `video/kuleana-wind-damage-reel.mp4` |
-| Thu Aug 20 | 9:45 PM ET | BIC | Country history: England 1966 | Content Master "England — country history" |
-| Fri Aug 21 | 9:00 AM HST | KUL | Roof checklist ("Look up") | `posts/08-roof-checklist.png` · §08 |
-| Sat Aug 22 | 9:00 AM HST | KUL | After the storm — document first | `posts/14-photo-storm.png` · §14 |
-| Sun Aug 23 | 9:45 PM ET | BIC | A Seleção Speaks: defending is a skill | Content Master (Jul 4 V4) |
-
-## Week 4 — Storm aftermath (Aug 24–30)
-
-| Date | Time | Acct | Item | Source |
-|---|---|---|---|---|
-| Mon Aug 24 | 9:00 AM HST | KUL | Rain intrusion — start recording | `posts/20-photo-rain.png` · §20 |
-| Tue Aug 25 | 9:45 PM ET | BIC | DYK: WWII shoebox trophy | Content Master "1938 tournament fact" |
-| Wed Aug 26 | 9:00 AM HST | KUL | Solar panel storm damage | `posts/19-photo-solar.png` · §19 |
-| Thu Aug 27 | 9:45 PM ET | BIC | Country history: Portugal 2016 | Content Master "Portugal — country history" |
-| Fri Aug 28 | 5:00 PM HST | KUL | **Reel** — fire damage | `video/kuleana-fire-damage-reel.mp4` |
-| Sat Aug 29 | 9:00 AM HST | KUL | Hail bruising | `posts/21-photo-hail.png` · §21 |
-| Sun Aug 30 | 9:45 PM ET | BIC | Joke: fake doctor's appointment | Content Master (Jul 6 "Joke of the day") |
-
-## Week 5 — Fire, smoke & hidden damage (Aug 31–Sep 6)
-
-| Date | Time | Acct | Item | Source |
-|---|---|---|---|---|
-| Mon Aug 31 | 9:00 AM HST | KUL | Kitchen fire | `posts/15-photo-fire.png` · §15 |
-| Tue Sep 1 | 9:45 PM ET | BIC | A Seleção Speaks: finals are a nerve test | Content Master (Jul 6 V4) |
-| Wed Sep 2 | 9:00 AM HST | KUL | Smoke damage next door | `posts/18-photo-smoke.png` · §18 |
-| Thu Sep 3 | 9:45 PM ET | BIC | DYK: Rossi 1982 redemption | Content Master "1982 tournament fact" |
-| Fri Sep 4 | 9:00 AM HST | KUL | Burst supply line photo | `posts/16-photo-pipe.png` · §16 |
-| Sat Sep 5 | 9:00 AM HST | KUL | Hidden mold | `posts/13-photo-mold.png` · §13 |
-| Sun Sep 6 | 9:45 PM ET | BIC | Country history: Belgium golden generation | Content Master "Belgium — country history" |
-
-## Coverage check
-
-- **KUL:** 18 feed posts (tiles 01–21, carousel as one post; portraits 22–24
-  removed) + all 4 reels = 22 items.
-- **BIC:** 15 evergreen slots, all drawn from "Ready" rows in the Content
-  Master — no new scripts needed to start; generate/record per the master
-  sheet workflow (script → HeyGen → review gate → post).
-- Weekly workload: ~4–5 Kuleana items + 3 BrazucaInCopa videos. No day
-  carries more than one item per account.
+- **KUL tile color sequence** (Q order): G C T G C G C G C G C G C G C T C T —
+  no two adjacent posts share a color, so every 3-across grid row mixes
+  palette; photo posts and text tiles alternate throughout.
+- **KUL narrative arc:** launch/identity (wk 1) → policy literacy (wk 2) →
+  hurricane-season storm push (wks 3–4) → fire/smoke/hidden damage (wk 5).
+- **All 18 remaining KUL feed posts + all 4 reels queued.** BIC: 15 evergreen
+  slots, Tue/Thu/Sun, no new scripts needed.
+- Max one item per account per day; Sundays KUL-off, Saturdays BIC-off.
 
 ## Before anything goes live
 
-1. Caren approves this combined calendar.
+1. Caren approves this queue.
 2. KUL: confirm rights on library photos (posts 11, 21); keep the
    illustrative-recreation caption lines (see `captions.md`); every caption
    ends with the license signature block.
-3. BIC: respect the master sheet's review gate ("Reviewed? (GATE)") before
-   posting any generated video.
+3. BIC: respect the Content Master "Reviewed? (GATE)" step before posting.
