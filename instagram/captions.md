@@ -291,3 +291,25 @@ anyone asks).
 We don't assess your loss from a desk. Every claim starts where the damage
 is — site inspection, photos, moisture readings, documented on your property
 with you beside us. That file is what gets your claim taken seriously.
+
+## Explainer reels (produced for partner/lead-gen use)
+
+### `video/kuleana-what-we-do-reel.mp4` (15s)
+**Caption:**
+Your insurance company has an adjuster. Who's working for you? 🤝 We document
+what their adjuster misses, read your entire policy, and negotiate — and you
+only pay if you recover. Shareable with any homeowner who's ever felt
+outnumbered by their carrier.
+
+### `video/kuleana-free-inspection-reel.mp4` (15s)
+**Caption:**
+A free inspection — no strings, here's what actually happens. We walk your
+home with you, photograph and measure everything, and you keep the
+documentation whether you file or not. Book yours: (808) 444-9420.
+
+### `video/kuleana-hurricane-update-reel.mp4` (15s)
+**Caption:**
+Hurricane season is here — and Hawaiʻi's rules have changed. The Hurricane
+Relief Fund is back (Act 296), your hurricane deductible is separate and
+percentage-based, and claims are won before the storm. Free baseline
+inspections, island-wide.
