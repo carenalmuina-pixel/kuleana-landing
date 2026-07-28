@@ -333,3 +333,18 @@ real client quote and written permission.
 - `posts/28-client-story-template.png` — TEMPLATE, needs real quote + consent
 - `posts/29-policy-tip.png` — Policyholder Tip Nº 01: document before cleanup
   (numbered series)
+
+### 30 · From the File Nº 001 — `posts/30-claim-file.png` (signature series)
+
+Original artifact-style design: a specimen adjuster's claim file with field
+notes, a REOPENED stamp, a paperclipped photo, and a handwritten margin note.
+Marked "SPECIMEN … illustrative, not a client record" on the artwork itself —
+keep that line. This is a repeatable signature series (Nº 002, 003…): each
+edition can teach one real claim lesson in file form.
+
+**Caption:**
+From the file 📁 Carrier scope: 9 line items, "cosmetic." Our documented
+scope: 47 line items, roof deck to flooring — because a 31% moisture reading
+doesn't stop at the drywall. This is what advocacy looks like on paper.
+(Specimen file — illustrative, not a client record.) Every claim deserves a
+file this thorough.
