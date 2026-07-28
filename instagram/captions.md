@@ -336,11 +336,12 @@ real client quote and written permission.
 
 ### 30 · From the File Nº 001 — `posts/30-claim-file.png` (signature series)
 
-Original artifact-style design: a specimen adjuster's claim file with field
-notes, a REOPENED stamp, a paperclipped photo, and a handwritten margin note.
-Marked "SPECIMEN … illustrative, not a client record" on the artwork itself —
-keep that line. This is a repeatable signature series (Nº 002, 003…): each
-edition can teach one real claim lesson in file form.
+Redesigned per Caren's feedback as a clean Xactimate-style estimate page:
+header block, room header with dimensions, line-item table (QTY / UNIT / RCV),
+"OMITTED BY CARRIER" highlighted rows, redacted totals, one handwritten
+accent. Marked "Specimen estimate — illustrative format only, not a client
+record" on the artwork — keep that line. Repeatable signature series
+(Nº 002, 003…): each edition teaches one claim lesson in estimate form.
 
 **Caption:**
 From the file 📁 Carrier scope: 9 line items, "cosmetic." Our documented
