@@ -23,11 +23,14 @@ Jul 28, 2026. Nothing has been published to any social platform.
   (`video/mcc-latest-post.mp4`); Selenite + own-voiceover production plan
   in `avatar-reels-pipeline.md` with a 6-reel first batch awaiting go.
 
-## 3 · Scheduling — ✅ drafted, awaiting approval
-- `schedule.md`: master queue — KUL assets in grid-cohesive order, MCC brief
-  lane, BIC standby.
-- **Open (Caren):** approve the queue; confirm rights on library photos
-  (posts 11, 21).
+## 3 · Scheduling — ✅ v2 drafted, awaiting approval
+- `schedule.md` v2: **2 posts/day per brand**, IG + FB + TikTok, two-week
+  calendar. KUL inventory covers exactly 14 days; MCC covers ~7½ — Week-2
+  MCC PM lane is the production gap (batch-2 list in the doc).
+- Batch-1 avatar reel scripts ready: `reel-scripts-batch1.md` — waiting on
+  Caren's six voice memos.
+- **Open (Caren):** approve the calendar; record the memos; confirm rights
+  on library photos (posts 11, 21); set up TikTok bios/accounts.
 
 ## 4 · Posting / Publishing — ⬜ not started (intentionally)
 - Nothing scheduled or posted anywhere. After approval: load the queue into

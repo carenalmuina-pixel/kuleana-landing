@@ -1,84 +1,113 @@
-# Master Posting Queue — Monarch (MCC) + Kuleana (KUL)
+# Master Posting Queue v2 — 2 posts/day · both brands · IG + FB + TikTok
 
 **Status: DRAFT — nothing has been uploaded or scheduled on any platform.**
 
-**Account map (per Caren):**
+**Cadence (per Caren, Jul 30):** two posts a day on **each** brand, published
+to Instagram + Facebook + TikTok. This version replaces the v1
+every-other-day queue; the v1 grid order is preserved inside the new lanes.
 
-- **MCC** = **@yenclaims** — Monarch Claims Consultants. Existing account,
-  keeps the Monarch identity (crown, #ClaimWhatsYours, black & gold — never
-  navy). Audience: Florida; times in **ET**.
-- **KUL** = **@kuleanaclaims** — Kuleana Claim Solutions. Receives the full
-  22-asset Kuleana set built in this repo (18 tiles + 4 reels). Audience:
-  Hawaiʻi; times in **HST**.
-- **BIC** = BrazucaInCopa — **on standby, nothing scheduled.** Rebrand
-  playbook: `account-transformation-script.md`.
+**Account map:**
 
-**Asset status:** every KUL item below is finished and sitting in `posts/` /
-`video/`. MCC items are **content briefs** — the Monarch-branded assets still
-need to be produced (black/gold system, crown motif, (305) 495-7177,
-#ClaimWhatsYours); most reuse proven formats from the existing @yenclaims
-feed. I can build the MCC tile set next on approval.
+- **MCC** = **@yenclaims** (IG) + Monarch Facebook Page + Monarch TikTok.
+  Black & gold — never navy. Times in **ET**. Slots: **10:00 AM** + **7:00 PM**.
+- **KUL** = **@kuleanaclaims** (IG) + Kuleana Facebook Page + Kuleana TikTok.
+  Times in **HST**. Slots: **9:00 AM** + **5:00 PM**.
+- **BIC** — standby, nothing scheduled (`account-transformation-script.md`).
 
-**KUL grid logic:** KUL feed posts run in this exact order so the 3-across
-grid alternates cream (C) / deep green (G) / terracotta (T) and photo posts
-alternate with text tiles. Posts 22–24 stay unscheduled (backups).
+## Platform rules (how one asset becomes three posts)
 
-| Q | Date | Time | Acct | Item | Source / Status |
-|---|---|---|---|---|---|
-| 1 | Mon Aug 3 | 9:00 AM HST | KUL | Brand anchor (G) — PIN | `posts/01-brand-anchor.png` · §01 · ready |
-| 2 | Tue Aug 4 | 10:00 AM ET | MCC | Hurricane-season checklist carousel | `monarch/posts/m02…m05` carousel · ready |
-| 3 | Wed Aug 5 | 9:00 AM HST | KUL | Warning signs (C) | `posts/02-warning-signs.png` · §02 · ready |
-| 4 | Thu Aug 6 | 5:00 PM HST | KUL | **Reel** — water damage | `video/kuleana-water-damage-reel.mp4` · ready |
-| 5 | Thu Aug 6 | 10:00 AM ET | MCC | "Two adjusters, two clients" tile | `monarch/posts/m06-two-adjusters.png` · ready |
-| 6 | Fri Aug 7 | 9:00 AM HST | KUL | Denial quote (T) | `posts/10-denial-quote.png` · §10 · ready |
-| 7 | Sat Aug 8 | 10:00 AM ET | MCC | Ceiling-bubble warning signs | `monarch/posts/m07-ceiling-stain.png` · ready |
-| 8 | Mon Aug 10 | 9:00 AM HST | KUL | Two adjusters (G) | `posts/03-two-adjusters.png` · §03 · ready |
-| 9 | Tue Aug 11 | 10:00 AM ET | MCC | Policy-review CTA ("DM POLICY") | `monarch/posts/m08-policy-review-cta.png` · ready |
-| 10 | Wed Aug 12 | 9:00 AM HST | KUL | Fine-print carousel (C) | `posts/04…07-*.png` · §04–07 · ready |
-| 11 | Thu Aug 13 | 5:00 PM HST | KUL | **Reel** — pipe burst | `video/kuleana-pipe-burst-reel.mp4` · ready |
-| 12 | Thu Aug 13 | 10:00 AM ET | MCC | Hail damage education | `monarch/posts/m09-hail.png` · ready |
-| 13 | Fri Aug 14 | 9:00 AM HST | KUL | Ceiling water photo (G) | `posts/11-photo-ceiling.png` · §11 · ready |
-| 14 | Sat Aug 15 | 10:00 AM ET | MCC | Mold behind the wall | `monarch/posts/m10-mold.png` · ready |
-| 15 | Mon Aug 17 | 9:00 AM HST | KUL | Roof wind photo (C) | `posts/12-photo-roof.png` · §12 · ready |
-| 16 | Tue Aug 18 | 10:00 AM ET | MCC | Roof warning signs ("Look up") | `monarch/posts/m11-roof-lookup.png` · ready |
-| 17 | Wed Aug 19 | 9:00 AM HST | KUL | Storm baseline (G) | `posts/09-storm-baseline.png` · §09 · ready |
-| 18 | Thu Aug 20 | 5:00 PM HST | KUL | **Reel** — wind damage | `video/kuleana-wind-damage-reel.mp4` · ready |
-| 19 | Thu Aug 20 | 10:00 AM ET | MCC | Storm baseline / document-before | `monarch/posts/m12-storm-baseline.png` · ready — note: similar topic went live on @yenclaims Jul 28 (DbVmUdsjkUT); keep the ≥4-day offset or swap with another MCC tile |
-| 20 | Fri Aug 21 | 9:00 AM HST | KUL | Solar panels (C) | `posts/19-photo-solar.png` · §19 · ready |
-| 21 | Sat Aug 22 | 10:00 AM ET | MCC | Free inspection CTA + phone | `monarch/posts/m13-free-inspection.png` · ready |
-| 22 | Mon Aug 24 | 9:00 AM HST | KUL | Hurricane deductible (G) | `posts/17-photo-lanai.png` · §17 · ready |
-| 23 | Tue Aug 25 | 10:00 AM ET | MCC | Denied-claim reassurance | `monarch/posts/m14-denied-claim.png` · ready |
-| 24 | Wed Aug 26 | 9:00 AM HST | KUL | Roof checklist (C) | `posts/08-roof-checklist.png` · §08 · ready |
-| 25 | Thu Aug 27 | 10:00 AM ET | MCC | ACV vs. replacement cost explainer | `monarch/posts/m15…m17` carousel · ready |
-| 26 | Fri Aug 28 | 9:00 AM HST | KUL | Storm aftermath photo (G) | `posts/14-photo-storm.png` · §14 · ready |
-| 27 | Fri Aug 28 | 5:00 PM HST | KUL | **Reel** — fire damage | `video/kuleana-fire-damage-reel.mp4` · ready |
-| 28 | Sat Aug 29 | 10:00 AM ET | MCC | Team/anniversary community post | `monarch/posts/m18-community.png` · ready (swap for real team photo if available) |
-| 29 | Mon Aug 31 | 9:00 AM HST | KUL | Hail bruising (C) | `posts/21-photo-hail.png` · §21 · ready |
-| 30 | Tue Sep 1 | 10:00 AM ET | MCC | Supply-line / sudden discharge tips | `monarch/posts/m19-supply-line.png` · ready |
-| 31 | Wed Sep 2 | 9:00 AM HST | KUL | Rain intrusion (G) | `posts/20-photo-rain.png` · §20 · ready |
-| 32 | Thu Sep 3 | 10:00 AM ET | MCC | Client-story format (with consent) | `monarch/posts/m21-client-story-template.png` · TEMPLATE — fill placeholders + written client consent before posting |
-| 33 | Fri Sep 4 | 9:00 AM HST | KUL | Kitchen fire (C) | `posts/15-photo-fire.png` · §15 · ready |
-| 34 | Sat Sep 5 | 10:00 AM ET | MCC | Fee transparency ("how we get paid") | `monarch/posts/m20-fee-transparency.png` · ready |
-| 35 | Mon Sep 7 | 9:00 AM HST | KUL | Burst supply line (T) | `posts/16-photo-pipe.png` · §16 · ready |
-| 36 | Wed Sep 9 | 9:00 AM HST | KUL | Smoke damage (C) | `posts/18-photo-smoke.png` · §18 · ready |
-| 37 | Fri Sep 11 | 9:00 AM HST | KUL | Hidden mold (T) | `posts/13-photo-mold.png` · §13 · ready |
+1. **IG + FB together:** schedule once in Meta Business Suite with both
+   placements checked — same asset, same caption, zero extra work.
+2. **TikTok:** reels are re-uploaded **natively** (never the IG file with a
+   watermark — TikTok downranks it; use the clean export from `video/`).
+   Tile carousels go up as **TikTok photo-mode** posts (they perform well
+   there). Single tiles: optional photo post or skip — reels carry TikTok.
+3. **TikTok captions:** shorter hook + same license line + same disclaimers
+   (FL solicitation text on MCC lead-gen applies on every platform).
+4. **Grid protection:** turn **off** "share reels to feed grid" on IG so
+   the tile color alternation below stays intact; reels live in the Reels
+   tab. TikTok/FB unaffected.
+5. Keyword CTAs stay "DM me the word POLICY" until `dm-automation.md` is
+   live on **both** IG accounts (TikTok has no comment automation in
+   ManyChat basic — answer TikTok comments manually).
 
-## Cohesion check
+## Inventory math (why the calendar looks like this)
 
-- **KUL color sequence** in Q order: G C T G C G C G C G C G C G C T C T —
-  no adjacent repeats; photo and text tiles alternate; launch → policy →
-  storm season → fire/hidden-damage arc preserved. All 18 tiles + 4 reels.
-- **MCC lane:** all 15 briefs produced (`monarch/posts/`, 21 tiles incl.
-  two carousels), Tue/Thu/Sat 10 AM ET, formats proven on the existing feed.
-  Captions: `monarch/captions.md` (FL solicitation disclaimer on lead-gen). Cross-account: never the same topic on both accounts in
-  the same week (topics are offset by at least 4 days).
+- **KUL:** 21 feed units (18 tiles + 3 backups 22–24, carousel = 1 unit)
+  + 7 reels = **28 units = exactly 14 days** at 2/day.
+- **MCC:** 15 feed units (21 tiles, 2 carousels, M21 held as template)
+  + 1 already-posted reel (not reusable) = **15 units ≈ 7½ days** at 2/day.
+- **Batch-1 avatar reels** (`reel-scripts-batch1.md`: 3 MCC + 3 KUL) fill
+  6 of the empty MCC/KUL PM slots once Caren records the voice memos.
+- Everything marked **⚠ PRODUCE** below has no asset yet — that's the
+  Week-2 MCC production gap. Options: front-load batch-2 production
+  (photo posts from real MCC claims + 4 more reels), or drop MCC to
+  1/day in Week 2. **Do not stretch by reposting the same tile twice in
+  a week.**
+
+## Week 1 — Mon Aug 3 → Sun Aug 9
+
+| Day | KUL 9 AM HST | KUL 5 PM HST | MCC 10 AM ET | MCC 7 PM ET |
+|---|---|---|---|---|
+| Mon 3 | 01 Brand anchor (G) — PIN · `posts/01` | **Reel** what-we-do → +TikTok | M01 Brand anchor (B) — PIN | **Avatar reel 1** (deductible) ⚠ needs voice memo |
+| Tue 4 | 02 Warning signs (C) | 10 Denial quote (T) | M06 Two adjusters (W) | Story-tier: repost latest live reel to FB/TikTok (already on IG) |
+| Wed 5 | 11 Ceiling photo (G) | **Reel** water damage → +TikTok | M02–05 Hurricane carousel (B) → TikTok photo-mode | **Avatar reel 3** (ACV) ⚠ needs voice memo |
+| Thu 6 | 12 Roof photo (C) | 03 Two adjusters (G) | M08 Policy-review CTA (G) ⚖️ | ⚠ PRODUCE (suggest: claim-photo post) |
+| Fri 7 | 04–07 Fine-print carousel (C) → TikTok photo-mode | **Reel** free inspection → +TikTok | M09 Hail (W) | **Avatar reel 5** (denial) ⚠ needs voice memo |
+| Sat 8 | 13 Mold photo (T) | 14 Storm photo (G) | M07 Ceiling stain (B) | ⚠ PRODUCE |
+| Sun 9 | 15 Fire photo (C) | **Reel** wind damage → +TikTok | M11 Roof look-up (W) | ⚠ PRODUCE |
+
+## Week 2 — Mon Aug 10 → Sun Aug 16
+
+| Day | KUL 9 AM HST | KUL 5 PM HST | MCC 10 AM ET | MCC 7 PM ET |
+|---|---|---|---|---|
+| Mon 10 | 17 Lanai/deductible photo (G) | 18 Smoke photo (C) | M12 Storm baseline (B) — ≥4-day offset from live Jul 28 reel: OK | ⚠ PRODUCE |
+| Tue 11 | 16 Pipe photo (T) | **Reel** hurricane update → +TikTok | M13 Free inspection (G) ⚖️ | ⚠ PRODUCE |
+| Wed 12 | 20 Rain photo (G) | 19 Solar photo (C) | M10 Mold (B) | ⚠ PRODUCE |
+| Thu 13 | 22 Inspection photo (G) | **Reel** pipe burst → +TikTok | M15–17 ACV carousel (W) ⚖️ → TikTok photo-mode | ⚠ PRODUCE |
+| Fri 14 | 21 Hail photo (C) | 24 On-site photo (T) | M14 Denied claim (B) ⚖️ | ⚠ PRODUCE |
+| Sat 15 | 23 Founder-desk photo (C) | **Reel** fire damage → +TikTok | M18 Community (B)* | ⚠ PRODUCE |
+| Sun 16 | 09 Storm baseline (G) | 08 Roof checklist (C) | M19 Supply line (W) | ⚠ PRODUCE |
+
+**Week 3 Monday:** M20 Fee transparency (B) opens the MCC lane; both brands
+then need batch-2 assets (see gap list). M21 client story posts whenever a
+consented case fills the template.
+
+\* M18: swap the quote tile for a real team photo if one exists by then.
+
+## Grid cohesion check
+
+- **KUL feed order** (AM+PM feed items, reels off-grid):
+  01·02·10·11·12·03·[04–07]·13·14·15·17·18·16·20·19·22·21·24·23·09·08 →
+  G C T G C G C T G C G C T G C G C T C G C — no adjacent repeats. ✓
+- **MCC feed order:** M01·M06·[M02–05]·M08·M09·M07·M11·M12·M13·M10·
+  [M15–17]·M14·M18·M19·M20 → B W B G W B W B G B W B B W B — one B·B seam
+  (M14→M18); the ⚠ PRODUCE PM posts will land between them in practice, so
+  fine — revisit when batch-2 assets exist. Grid previews before going
+  live: `monarch/captions.md` §feed-order.
+- **Cross-account:** same topic never on both brands in the same week —
+  storm-baseline (KUL Aug 16 / MCC Aug 10) is the tightest pair at 6 days. ✓
 - **BIC:** zero items — standby.
+
+## Production gap list (to sustain 2/day past the inventory)
+
+1. **6 avatar reels — batch 1:** scripts ready (`reel-scripts-batch1.md`),
+   waiting only on Caren's six voice memos. Fills 3 MCC + 3 KUL PM slots.
+2. **MCC batch 2 (~12 units):** real claim/inspection photos in black-gold
+   frames (strongest option — MCC has actual FL claims history), plus 4
+   reels from the 50-topic list translated to FL statutes.
+3. **KUL batch 2 (~8 units)** needed from Aug 17: next reels from
+   `reels-content-plan.md` §3 on Caren's pick.
+4. **TikTok bios:** both TikTok accounts need the license line in bio +
+   linktree with kuleanaclaims.com / (305) 495-7177 before first post.
 
 ## Before anything goes live
 
-1. Caren approves the queue and the MCC brief list.
+1. Caren approves this calendar (and the two ⚠ open questions: MCC Week-2
+   PM lane, and whether Sunday posting stays or both brands take Sunday PM
+   off).
 2. KUL compliance: license line + caption disclosures per `captions.md` /
-   `compliance.md` (Hawaii DCCA rules).
-3. MCC assets, when produced: Florida license number in the footer (same
-   NAIC-model advertising logic applies in FL — no outcome promises, no
-   fee percentages in ads), black & gold system only.
+   `compliance.md` (Hawaiʻi DCCA). MCC compliance: FL license + solicitation
+   disclaimer on lead-gen (⚖️ rows) per `monarch/captions.md`.
+3. Rights confirmed on library photos (KUL 11, 21).
+4. DM automation live before any caption *promises* auto-reply.
