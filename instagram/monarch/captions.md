@@ -155,3 +155,16 @@ Posting per the master queue in `../schedule.md` (Tue/Thu/Sat 10 AM ET),
 the grid alternates black / white / gold with no two adjacent repeats:
 M02(B) M06(W) M07(B) M08(G) M09(W) M10(B) M11(W) M12(B) M13(G) M14(B)
 M15(W) M18(B) M19(W) M21(W→ after filling) M20(B).
+
+---
+
+## AR-1 · Avatar reel — "This stain wasn't there last month" ⚖️
+`../video/mcc-avatar-ceiling-reel.mp4` · 13.6s · Caren's voice (clone)
+
+That ring on the ceiling is a deadline. Water keeps moving behind the
+drywall — and every day it travels, more of the loss gets called "wear
+and tear." Photograph it today, before you paint. 📞 (305) 495-7177 —
+the inspection is free.
+
+(Footage is an illustrative recreation.) — tag platform AI label on upload.
++ signature block + FL solicitation disclaimer (lead-gen).

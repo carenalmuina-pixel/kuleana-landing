@@ -19,14 +19,16 @@ Jul 28, 2026. Nothing has been published to any social platform.
   M21 is a template — fill placeholders + client consent before posting.
 - ⬜ **Reel pipeline:** 50 topics in `reels-content-plan.md`; next batch on
   Caren's pick.
-- 🔵 **Avatar reels (new):** latest @yenclaims post analyzed and archived
-  (`video/mcc-latest-post.mp4`); Selenite + own-voiceover production plan
-  in `avatar-reels-pipeline.md` with a 6-reel first batch awaiting go.
+- ✅ **Avatar reels live format:** first two produced with Selenite +
+  Caren's voice clone: `video/kuleana-avatar-roof-reel.mp4`,
+  `video/mcc-avatar-ceiling-reel.mp4`. Batch-1 scripts in
+  `reel-scripts-batch1.md` (4 remaining to produce — no voice memos
+  required now that the clone works; memos still preferred).
 
 ## 3 · Scheduling — ✅ v2 drafted, awaiting approval
-- `schedule.md` v2: **2 posts/day per brand**, IG + FB + TikTok, two-week
-  calendar. KUL inventory covers exactly 14 days; MCC covers ~7½ — Week-2
-  MCC PM lane is the production gap (batch-2 list in the doc).
+- `schedule.md` **v3**: variety-first — 1 post/day + 2 every other day per
+  brand, IG + FB + TikTok + **LinkedIn** (KUL 3×/wk, MCC 2×/wk company
+  pages). Includes the Postiz changeover steps (clear old queue, reload).
 - Batch-1 avatar reel scripts ready: `reel-scripts-batch1.md` — waiting on
   Caren's six voice memos.
 - **Open (Caren):** approve the calendar; record the memos; confirm rights

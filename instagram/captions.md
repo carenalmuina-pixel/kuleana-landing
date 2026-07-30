@@ -349,3 +349,18 @@ scope: 47 line items, roof deck to flooring — because a 31% moisture reading
 doesn't stop at the drywall. This is what advocacy looks like on paper.
 (Specimen file — illustrative, not a client record.) Every claim deserves a
 file this thorough.
+
+---
+
+## Avatar reel — "After every storm: look up" (60-second roof check)
+`video/kuleana-avatar-roof-reel.mp4` · 19.6s · Caren's voice (clone)
+
+Aloha 🌺 After every storm, take sixty seconds and look up: lifted
+shingle edges, granules in the gutters, flashing pulling away. Spot one?
+Photograph it that same day — your claim will thank you. Free roof
+inspection: (808) 444-9420 or kuleanaclaims.com.
+
+(Footage is an illustrative recreation.) — tag platform AI label on upload.
+Caren Almuina · HI Public Adjuster License #19246735 · Hawaiʻi DCCA
+Insurance Division · No recovery, no fee
+#HawaiiHomeowners #PublicAdjuster #KuleanaClaims #HurricaneSeason2026
