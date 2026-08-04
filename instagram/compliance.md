@@ -1,4 +1,10 @@
-# Hawaii Public Adjusting — Statute Cross-Reference for @yenclaims Content
+# Hawaii Public Adjusting — Statute Cross-Reference for @kuleanaclaims Content
+
+> **Note:** this document is Kuleana/Hawaii-specific only. It predates the
+> account remap in which `@yenclaims` became Monarch Claims Consultants'
+> (Florida) handle — the title below has been corrected accordingly. No
+> equivalent Florida compliance cross-reference exists yet for Monarch; see
+> `schedule.md` for the outstanding Florida license/footer work.
 
 This note maps the redesigned Instagram set against Hawaii's public adjusting
 law (HRS chapter 431, article 9, including the public adjuster provisions
